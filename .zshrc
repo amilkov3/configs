@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/sbin:$HOME/activator-dist-1.3.10/bin:$HOME/scala-2.11.8/bin:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$HOME/apache-maven-3.3.9/bin:$HOME/apache-cassandra-2.1.15/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/sbin:$HOME/Library/Haskell/bin:$HOME/activator-dist-1.3.10/bin:$HOME/scala-2.11.8/bin:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$HOME/apache-maven-3.3.9/bin:$HOME/apache-cassandra-2.1.15/bin:/usr/local/bin:$PATH
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 #export JAVA_HOME=`/usr/libexec/java_home -v 1.7.0_79`
@@ -10,6 +10,7 @@ export EDITOR='vim'
 alias v='vim'
 alias g='git'
 alias s='source'
+alias t='tmux'
 alias j8='export JAVA_HOME=`/usr/libexec/java_home -v 1.8`'
 alias j7='export JAVA_HOME=`/usr/libexec/java_home -v 1.7`'
 
@@ -97,3 +98,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 prompt_context () {}
+
+if [ "$TMUX" = "" ]; then tmux; fi 

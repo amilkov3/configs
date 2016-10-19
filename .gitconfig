@@ -1,0 +1,27 @@
+[user]
+	name = amilkov1
+	email = alex.milkov.contractor@weather.com\n
+[credential]
+	helper = osxkeychain
+[alias]
+	pf = push --force-with-lease
+	ps = push
+  pl = pull
+	l = log
+  lo = log --oneline
+  rv = revert
+	t = tag
+	a = add
+	c = commit
+	cl = clone
+	d = diff
+	s = status
+	as = rebase -i --autosquash 
+	st = stash
+	co = checkout
+	cob = checkout -b
+  cp = cherry-pick
+	rs = reset
+	rb = rebase   
+	f = fetch
+	m = merge
