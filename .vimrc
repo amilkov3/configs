@@ -3,8 +3,6 @@ set backspace=2
 syntax on
 filetype plugin indent on 
 set expandtab
-:q
-:q
 set tabstop=2
 set shiftwidth=2
 colorscheme solarized
@@ -27,19 +25,19 @@ nmap <silent> <A-Right> :wincmd l<CR>
 
 let g:ctrlp_cmd = 'CtrlP'
 
-nnoremap h i
-nnoremap i k
-nnoremap j h
-nnoremap k j
+"nnoremap h i
+"nnoremap i k
+"nnoremap j h
+"nnoremap k j
 
 vnoremap <S-l> $
 vnoremap <S-j> ^
 nnoremap <S-l> $
 nnoremap <S-j> ^
 
-vnoremap i k
-vnoremap j h
-vnoremap k j
+"vnoremap i k
+"vnoremap j h
+"vnoremap k j
 
 map <silent> tw :GhcModTypeInsert<CR>
 map <silent> ts :GhcModSplitFunCase<CR>

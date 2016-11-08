@@ -5,9 +5,9 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 #export JAVA_HOME=`/usr/libexec/java_home -v 1.7.0_79`
 export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home'
 
-export EDITOR='vim'
+export EDITOR='nvim'
 
-alias v='vim'
+alias v='nvim'
 alias g='git'
 alias s='source'
 alias t='tmux'
@@ -17,6 +17,7 @@ alias j7='export JAVA_HOME=`/usr/libexec/java_home -v 1.7`'
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/amilkov/.oh-my-zsh
 
+bindkey -v
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -97,6 +98,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-prompt_context () {}
+prompt_context(){
+  prompt_dir(){
+    prompt_segment blue black '%1/'
+  }
+}
+
 
 if [ "$TMUX" = "" ]; then tmux; fi 
