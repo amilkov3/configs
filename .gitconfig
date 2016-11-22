@@ -12,11 +12,13 @@
   rv = revert
 	t = tag
 	a = add
+  b = branch
 	c = commit
 	cl = clone
 	d = diff
 	s = status
 	as = rebase -i --autosquash 
+  psu = push --set-upstream
 	st = stash
 	co = checkout
 	cob = checkout -b

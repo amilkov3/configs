@@ -1,0 +1,23 @@
+Host ui
+  HostName 54.159.137.151
+  User psg-user
+
+Host usa
+  HostName 54.227.8.153
+  User psg-user
+
+Host usb
+  HostName 54.83.132.248
+  User psg-user
+
+Host up
+  HostName 54.167.253.162
+  User psg-user
+
+Host dsa
+  HostName 54.210.22.231
+  User psg-user
+
+Host dsb
+  HostName 52.23.216.181 
+  User psg-user

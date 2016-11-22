@@ -31,9 +31,9 @@ let g:ctrlp_cmd = 'CtrlP'
 "nnoremap k j
 
 vnoremap <S-l> $
-vnoremap <S-j> ^
+vnoremap <S-h> ^
 nnoremap <S-l> $
-nnoremap <S-j> ^
+nnoremap <S-h> ^
 
 "vnoremap i k
 "vnoremap j h
