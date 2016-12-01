@@ -6,11 +6,11 @@ source ~/.vimrc
 let g:lopen = 2
 
 let g:neomake_warning_sign = {
-      \ 'text': '💰',
+      \ 'text': '🚽',
             \ }
 
 let g:neomake_error_sign = {
-      \ 'text': '⛏',
+      \ 'text': '💩',
       \ }
 
 :let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1

@@ -13,6 +13,10 @@ set showmatch
 
 colorscheme solarized
 
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+
 "i beam cursor in insert mode (Mac)
 let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
 let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
@@ -23,8 +27,6 @@ map <C-i> <C-W>k<C-W>
 map <C-k> <C-W>j<C-W>
 set wmh=0
 
-nmap <silent> <A-Right> :wincmd l<CR>
-
 vnoremap <S-l> $
 vnoremap <S-h> ^
 nnoremap <S-l> $
@@ -33,10 +35,14 @@ nnoremap <S-h> ^
 nmap <script> <silent> m :call ToggleLocationList()<CR>
 nmap <script> <silent> K :lpr<CR>
 nmap <script> <silent> J :lne<CR>
-nmap <script> <silent> q :tabclose<CR>
 
-noremap , gt
-noremap . gT
+nmap <script> <silent> q :wincmd j<CR>
+nmap <script> <silent> w :wincmd k<CR>
+nmap <script> <silent> [ :wincmd h<CR>
+nmap <script> <silent> ] :wincmd l<CR>
+
+nmap , :bprevious<CR> 
+nmap . :bnext<CR> 
 
 "Ctrl-p
 let g:ctrlp_cmd = 'CtrlP'
@@ -58,7 +64,7 @@ map <silent> te :GhcModTypeClear<CR>
 "Syntastic 
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%*
 "
 "let g:syntastic_always_populate_loc_list = 1
 "let g:syntastic_auto_loc_list = 1
