@@ -1,9 +1,9 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/sbin:$HOME/Library/Haskell/bin:$HOME/activator-dist-1.3.10/bin:$HOME/scala-2.11.8/bin:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$HOME/apache-maven-3.3.9/bin:$HOME/.cabal/bin:$HOME/apache-cassandra-2.1.15/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/sbin:$HOME/activator-dist-1.3.10/bin:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$HOME/apache-maven-3.3.9/bin:$HOME/apache-cassandra-2.1.15/bin:/usr/local/bin:$PATH
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 #export JAVA_HOME=`/usr/libexec/java_home -v 1.7.0_79`
-export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home'
+export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home'
 
 export EDITOR='nvim'
 
@@ -14,6 +14,12 @@ alias s='ssh'
 alias t='tmux'
 alias j8='export JAVA_HOME=`/usr/libexec/java_home -v 1.8`'
 alias j7='export JAVA_HOME=`/usr/libexec/java_home -v 1.7`'
+alias scala='scala -Dscala.color'
+
+alias g7='export PATH=$HOME/.stack/snapshots/x86_64-osx/lts-6.26/7.10.3/bin:$HOME/.stack/programs/x86_64-osx/ghc-7.10.3/bin:$PATH'
+alias g8='export PATH=$HOME/.stack/snapshots/x86_64-osx/lts-7.10/8.0.1/bin:$HOME/.stack/programs/x86_64-osx/ghc-8.0.1/bin:$PATH'
+alias s11='export PATH=$HOME/scala-2.11.8/bin:$PATH'
+alias s12='export PATH=$HOME/scala-2.12.0/bin:$PATH'
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/amilkov/.oh-my-zsh
