@@ -18,6 +18,7 @@
 	d = diff
 	s = status
 	as = rebase -i --autosquash 
+  rbc = rebase --continue
   psu = push --set-upstream
 	st = stash
 	co = checkout
