@@ -21,3 +21,14 @@ Host dsa
 Host dsb
   HostName 52.23.216.181 
   User psg-user
+
+Host github.com-voklima
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa1
+
+Host github.com-amilkov3
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+

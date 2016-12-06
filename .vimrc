@@ -44,6 +44,8 @@ nmap <script> <silent> ] :wincmd l<CR>
 nmap , :bprevious<CR> 
 nmap . :bnext<CR> 
 
+nnoremap <silent> <C-c> :nohl<CR>
+
 "Ctrl-p
 let g:ctrlp_cmd = 'CtrlP'
 

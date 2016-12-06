@@ -5,6 +5,8 @@ source ~/.vimrc
 
 let g:lopen = 2
 
+let g:neomake_autolint_sign_column_always = 1
+
 let g:neomake_warning_sign = {
       \ 'text': '🚽',
             \ }

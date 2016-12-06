@@ -19,7 +19,7 @@ alias scala='scala -Dscala.color'
 alias g7='export PATH=$HOME/.stack/snapshots/x86_64-osx/lts-6.26/7.10.3/bin:$HOME/.stack/programs/x86_64-osx/ghc-7.10.3/bin:$PATH'
 alias g8='export PATH=$HOME/.stack/snapshots/x86_64-osx/lts-7.10/8.0.1/bin:$HOME/.stack/programs/x86_64-osx/ghc-8.0.1/bin:$PATH'
 alias s11='export PATH=$HOME/scala-2.11.8/bin:$PATH'
-alias s12='export PATH=$HOME/scala-2.12.0/bin:$PATH'
+alias s12='export PATH=$HOME/scala-2.12.1/bin:$PATH'
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/amilkov/.oh-my-zsh

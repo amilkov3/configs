@@ -26,5 +26,7 @@
   cp = cherry-pick
 	rs = reset
 	rb = rebase   
+  ra = remote add
+  rr = remote rm
 	f = fetch
 	m = merge
