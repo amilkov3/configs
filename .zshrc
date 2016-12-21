@@ -12,6 +12,7 @@ alias g='git'
 alias src='source'
 alias s='ssh'
 alias t='tmux'
+alias tk='tmux kill-server'
 alias j8='export JAVA_HOME=`/usr/libexec/java_home -v 1.8`'
 alias j7='export JAVA_HOME=`/usr/libexec/java_home -v 1.7`'
 alias scala='scala -Dscala.color'
@@ -20,6 +21,9 @@ alias g7='export PATH=$HOME/.stack/snapshots/x86_64-osx/lts-6.26/7.10.3/bin:$HOM
 alias g8='export PATH=$HOME/.stack/snapshots/x86_64-osx/lts-7.10/8.0.1/bin:$HOME/.stack/programs/x86_64-osx/ghc-8.0.1/bin:$PATH'
 alias s11='export PATH=$HOME/scala-2.11.8/bin:$PATH'
 alias s12='export PATH=$HOME/scala-2.12.1/bin:$PATH'
+
+g8
+s12
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/amilkov/.oh-my-zsh
