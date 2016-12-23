@@ -15,6 +15,8 @@ alias scala='scala -Dscala.color'
 alias s11='export PATH=$HOME/scala-2.11.8/bin:$PATH'
 alias s12='export PATH=$HOME/scala-2.12.1/bin:$PATH'
 
+s12
+
 # export STACK_YAML=$HOME/.stack/global-project/stack.yaml
 
 bindkey -v
