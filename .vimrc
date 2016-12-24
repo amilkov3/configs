@@ -1,6 +1,6 @@
 execute pathogen#infect()
 set backspace=2
-syntax on
+syntax enable
 filetype plugin indent on 
 set expandtab
 set tabstop=2
@@ -11,11 +11,8 @@ set history=100
 set hlsearch
 set showmatch
 
+set background=light
 colorscheme solarized
-
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-
 
 "i beam cursor in insert mode (Mac)
 let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
@@ -49,12 +46,14 @@ nnoremap <silent> <C-c> :nohl<CR>
 "Ctrl-p
 let g:ctrlp_cmd = 'CtrlP'
 
-"Ghc-mod
-map <silent> tw :GhcModTypeInsert<CR>
-map <silent> ts :GhcModSplitFunCase<CR>
-map <silent> tq :GhcModType<CR>
-map <silent> te :GhcModTypeClear<CR>
+"Gitgutter
+let g:gitgutter_sign_column_always = 1
 
+"Ghc-mod
+map <silent> ti :GhcModTypeInsert<CR>
+map <silent> ts :GhcModSplitFunCase<CR>
+map <silent> tt :GhcModType<CR>
+map <silent> tc :GhcModTypeClear<CR>
 
 "Nerdtree 
 "map <Leader>s :SyntasticToggleMode<CR>
@@ -77,11 +76,14 @@ map <silent> te :GhcModTypeClear<CR>
 
 let g:airline_theme='solarized'
 
+"Neco-ghc
+let g:haskellmode_completion_ghc = 1
+autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+let g:necoghc_enable_detailed_browse = 1
+
+"YouCompleteMe
 let g:ycm_auto_trigger = 1
 let g:ycm_min_num_of_chars_for_completion = 1
-
-let g:haskellmode_completion_ghc = 0
-autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 let g:ycm_semantic_triggers = {'haskell' : ['.']}
 
 "let $PATH = $PATH . ':' . expand('~/.cabal/bin')
