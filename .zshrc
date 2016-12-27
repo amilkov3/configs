@@ -1,4 +1,4 @@
-source .macshrc
+source $HOME/.macshrc
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
