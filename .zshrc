@@ -8,8 +8,14 @@ alias v='nvim'
 alias g='git'
 alias src='source'
 alias s='ssh'
+
 alias t='tmux'
 alias tk='tmux kill-server'
+alias tl='tmux ls'
+alias ta='tmux a -t'
+alias tn='tmux new -s'
+alias tks='tmux kill-session -t'
+
 alias scala='scala -Dscala.color'
 
 alias s11='export PATH=$HOME/scala-2.11.8/bin:$PATH'
