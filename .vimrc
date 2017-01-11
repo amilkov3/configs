@@ -1,6 +1,7 @@
 execute pathogen#infect()
 set backspace=2
 syntax enable
+filetype on
 filetype plugin indent on 
 set expandtab
 set tabstop=2
@@ -49,11 +50,15 @@ let g:ctrlp_cmd = 'CtrlP'
 "Gitgutter
 let g:gitgutter_sign_column_always = 1
 
+"vim-hdevtools
+au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
+au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
+
 "Ghc-mod
-map <silent> ti :GhcModTypeInsert<CR>
-map <silent> ts :GhcModSplitFunCase<CR>
-map <silent> tt :GhcModType<CR>
-map <silent> tc :GhcModTypeClear<CR>
+"map <silent> ti :GhcModTypeInsert<CR>
+"map <silent> ts :GhcModSplitFunCase<CR>
+"map <silent> tt :GhcModType<CR>
+"map <silent> tc :GhcModTypeClear<CR>
 
 "Nerdtree 
 "map <Leader>s :SyntasticToggleMode<CR>

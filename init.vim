@@ -5,7 +5,7 @@ source ~/.vimrc
 "
 "autocmd BufWritePost *.hs GhcModCheck
 
-let g:neomake_haskell_enabled_makers = ['ghcmod', 'hlint']
+let g:neomake_haskell_enabled_makers = ['hdevtools', 'hlint']
 
 "let g:neomake_autolint_enabled = 1
 

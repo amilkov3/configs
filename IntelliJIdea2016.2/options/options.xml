@@ -1,0 +1,39 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="evlsprt3.162" value="12" />
+    <property name="installed.kotlin.plugin.version" value="1.0.4-release-IJ2016.1-112" />
+    <property name="android-component-compatibility-check" value="1484162717045" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Google Drive/sun-ms-flux/build.sbt&#10;/Users/amilkov/Google Drive/sun-ms-router/build.sbt&#10;/Users/amilkov/Google Drive/sun-ms-controller&#10;/Users/amilkov/Google Drive/sun-ms-flux&#10;/Users/amilkov/Google Drive/sun-ms-ups&#10;/Users/amilkov/readthedoc/readthedocs&#10;/Users/amilkov/.stack/snapshots/x86_64-osx/lts-7.14/8.0.1/bin/ghc-modi&#10;/Users/amilkov/.stack/snapshots/x86_64-osx/lts-7.14/8.0.1/bin/ghc-mod&#10;/Users/amilkov/.stack/snapshots/x86_64-osx/lts-7.14/8.0.1/bin/hlint&#10;/Users/amilkov/servant-proj/stack.yaml&#10;/Users/amilkov/Dropbox/servant-proj/stack.yaml&#10;/Users/amilkov/.stack/snapshots/x86_64-osx/lts-7.10/8.0.1/bin/ghc-modi&#10;/Users/amilkov/servant-proj&#10;/Users/amilkov/Dropbox/purescript&#10;/Users/amilkov/Google Drive/sun-ms-dsx&#10;/Users/amilkov/Google Drive/Scripts&#10;/Users/amilkov/Google Drive/sun-ms-ups1&#10;/Users/amilkov/Google Drive/dsx&#10;/Users/amilkov/Google Drive/ups-dev&#10;/Users/amilkov/Google Drive/scripts&#10;/Users/amilkov/Google Drive/sun-ms-ups/src/integration-test/pom.xml&#10;/Users/amilkov/Google Drive/sun-ms-dsx/src/integration-test/pom.xml&#10;/Users/amilkov/Google Drive/sun-ms-dsx-2.9&#10;/Users/amilkov/Google Drive/sun-dataprocessor&#10;/Users/amilkov/Google Drive/dsx/src/integration-test/pom.xml&#10;/Users/amilkov/Dropbox/Haskell&#10;/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk&#10;/Users/amilkov/play-scala&#10;/Users/amilkov/Dropbox/Scala&#10;/Users/amilkov/scalaz" />
+    <property name="last.imported.location" value="$USER_HOME$/Google Drive/sun-ms-controller" />
+    <property name="create.project.preferred.importer" value="SBT" />
+    <property name="toolwindow.stripes.buttons.info.shown" value="true" />
+    <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
+    <property name="lastTip" value="112" />
+    <property name="KEYMAP" value="goto previous splitt&#10;goto next splitt&#10;go to next splitt&#10;move to&#10;search" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="scala.last.updated" value="1484163125335" />
+    <property name="decompiler.legal.notice.accepted" value="true" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="PLUGIN_FILTER" value="pu&#10;pure&#10;pures&#10;hask&#10;mark" />
+    <property name="wordPress.support.wordPressPath" value="$USER_HOME$/Downloads/test-drago" />
+    <property name="fileTypeChangedCounter" value="13" />
+    <property name="ProjectStructure.TopLevelElements" value="0.15332031" />
+    <property name="FrameworksFinderRecursivePanel[0]" value="0.16597511" />
+    <property name="project.wizard.group" value="HASKELL_MODULE" />
+    <property name="project.wizard.template" value="Haskell" />
+    <property name="java.module.default.source.root" value="src" />
+    <property name="ideavim.statistics.timestamp" value="1484153138293" />
+    <property name="Scala.Splitter.Proportion" value="0.14145435" />
+    <property name="com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor" value="Dependencies" />
+    <property name="Copy.OpenInEditor" value="true" />
+    <property name="FindSplitterProportion" value="0.24763194" />
+    <property name="JUnitSupport.hidePassedTests" value="false" />
+    <property name="com.intellij.history.integration.ui.views.FileHistoryDialog.0" value="300" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="settings.code.style.selected.tab.Scala" value="ScalaDoc" />
+    <property name="FileTemplates.CurrentTab" value="Includes" />
+    <property name="FileTemplates.SelectedTemplate" value="ActionScript File Header" />
+    <property name="selected.color.option.type" value="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES" />
+    <property name="search.everywhere.max.popup.width" value="641" />
+  </component>
+</application>

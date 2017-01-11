@@ -1,0 +1,1 @@
+/* StormyFriends ™ ${YEAR} */

@@ -1,0 +1,328 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/Google Drive/sun-ms-flux" />
+        <option value="$USER_HOME$/Google Drive/sun-ms-router" />
+        <option value="$USER_HOME$/Google Drive/sun-ms-controller" />
+        <option value="$USER_HOME$/Google Drive/sun-ms-ups" />
+        <option value="$USER_HOME$/servant-proj" />
+        <option value="$USER_HOME$/readthedoc/readthedocs" />
+        <option value="$USER_HOME$/Dropbox/servant-proj" />
+        <option value="$USER_HOME$/Dropbox/purescript" />
+        <option value="$USER_HOME$/Google Drive/sun-ms-dsx" />
+        <option value="$USER_HOME$/Google Drive/Scripts" />
+        <option value="$USER_HOME$/Google Drive/sun-ms-ups1" />
+        <option value="$USER_HOME$/Google Drive/dsx" />
+        <option value="$USER_HOME$/Google Drive/yesod" />
+        <option value="$USER_HOME$/Google Drive/ups-dev" />
+        <option value="$USER_HOME$/Google Drive/sun-ms-dsx-2.9" />
+        <option value="$USER_HOME$/Google Drive/sun-dataprocessor" />
+        <option value="$USER_HOME$/Dropbox/Haskell" />
+        <option value="$USER_HOME$/play-scala" />
+        <option value="$USER_HOME$/Dropbox/Scala/Scalaz" />
+        <option value="$USER_HOME$/Dropbox/Scala/Functional_Programming" />
+        <option value="$USER_HOME$/Downloads/test-drago" />
+        <option value="$USER_HOME$/Dropbox/Scala/Parrallel_Programming" />
+        <option value="$USER_HOME$/Dropbox/Scala" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/Google Drive/sun-ms-flux" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/Google Drive/sun-ms-flux" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Downloads/test-drago">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.1812.17" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1473389058339" />
+              <option name="buildTimestamp" value="1472529600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Dropbox/Haskell">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2032.8" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1475679759313" />
+              <option name="buildTimestamp" value="1473393600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Dropbox/Purescript">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.1812.17" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1473732484603" />
+              <option name="buildTimestamp" value="1472529600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Dropbox/Scala">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.1812.17" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1473181286044" />
+              <option name="buildTimestamp" value="1472529600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Dropbox/Scala/Functional_Programming">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2032.8" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1474380345745" />
+              <option name="buildTimestamp" value="1473393600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Dropbox/Scala/Parrallel_Programming">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.1812.17" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1473181392472" />
+              <option name="buildTimestamp" value="1472529600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Dropbox/Scala/Scalaz">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2032.8" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1474762426300" />
+              <option name="buildTimestamp" value="1473393600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Dropbox/purescript">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2228.15" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1482883442959" />
+              <option name="buildTimestamp" value="1476417600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Dropbox/servant-proj">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2228.15" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1483134114591" />
+              <option name="buildTimestamp" value="1476417600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Google Drive/Scripts">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2228.15" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1481907204452" />
+              <option name="buildTimestamp" value="1476417600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Google Drive/dsx">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2228.15" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1481219111826" />
+              <option name="buildTimestamp" value="1476417600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Google Drive/scripts">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2228.15" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1479927038637" />
+              <option name="buildTimestamp" value="1476417600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Google Drive/sun-dataprocessor">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2228.15" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1477407865492" />
+              <option name="buildTimestamp" value="1476417600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Google Drive/sun-ms-controller">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2228.15" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1484064563924" />
+              <option name="buildTimestamp" value="1476417600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Google Drive/sun-ms-dsx">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2228.15" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1482259209002" />
+              <option name="buildTimestamp" value="1476417600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Google Drive/sun-ms-dsx-2.9">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2228.15" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1477597736330" />
+              <option name="buildTimestamp" value="1476417600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Google Drive/sun-ms-flux">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2228.15" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1484162727290" />
+              <option name="buildTimestamp" value="1476417600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Google Drive/sun-ms-router">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2228.15" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1484064774320" />
+              <option name="buildTimestamp" value="1476417600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Google Drive/sun-ms-ups">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2228.15" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1483720199144" />
+              <option name="buildTimestamp" value="1476417600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Google Drive/sun-ms-ups1">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2228.15" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1481665206128" />
+              <option name="buildTimestamp" value="1476417600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Google Drive/ups-dev">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2228.15" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1479836402520" />
+              <option name="buildTimestamp" value="1476417600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Google Drive/yesod">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2228.15" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1479927981002" />
+              <option name="buildTimestamp" value="1476417600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Weather/sun-ms-ups">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.1812.17" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1473266847036" />
+              <option name="buildTimestamp" value="1472529600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/play-scala">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2032.8" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1474954276185" />
+              <option name="buildTimestamp" value="1473393600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/readthedoc/readthedocs">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2228.15" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1483294194429" />
+              <option name="buildTimestamp" value="1476417600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/servant-proj">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-162.2228.15" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1483507857829" />
+              <option name="buildTimestamp" value="1476417600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/Google Drive" />
+  </component>
+</application>
