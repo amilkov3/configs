@@ -16,12 +16,14 @@ alias ta='tmux a -t'
 alias tn='tmux new -s'
 alias tks='tmux kill-session -t'
 
-alias scala='scala -Dscala.color'
+scalaargs='-Dscala.color'
 
-alias s11='export PATH=$HOME/scala-2.11.8/bin:$PATH'
-alias s12='export PATH=$HOME/scala-2.12.1/bin:$PATH'
+alias s11='$HOME/scala-2.11.8/bin/scala $scalaargs'
+alias s12='$HOME/scala-2.12.1/bin/scala $scalaargs'
 
-s12
+alias ser='stack exec runhaskell'
+alias se='stack exec'
+alias hdevtools='stack exec --no-ghc-package-path hdevtools --'
 
 # export STACK_YAML=$HOME/.stack/global-project/stack.yaml
 
