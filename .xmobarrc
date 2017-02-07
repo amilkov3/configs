@@ -1,4 +1,4 @@
-Config { font = "-*-Fixed-Bold-R-Normal-*-13-*-*-*-*-*-*-*"
+Config { font = "xft:Meslo LG M for Powerline RegularForPowerline:size=9"
         , borderColor = "black"
         , border = TopB
         , bgColor = "black"
@@ -10,14 +10,17 @@ Config { font = "-*-Fixed-Bold-R-Normal-*-13-*-*-*-*-*-*-*"
                         , Run Swap [] 10
                         , Run Date "%a %b %_d %Y <fc=#ee9a00>%l:%M</fc>" "date" 10
                         , Run BatteryP ["BAT0"]
-                          ["-t", "<acstatus><watts> (<left>%)",
-                           "-L", "10", "-H", "80", "-p", "3",
-                           "--", "-O", "<fc=green>On</fc> - ", "-i", "",
+                          ["-t", "<left>% <acstatus>",
+                           "-L", "20", "-H", "80", "-p", "3",
+                            "-l", "red", "-h", "green",
+                           "--", "-O", "<fc=green>On </fc>", "-i", "",
                            "-L", "-15", "-H", "-5",
-                           "-l", "red", "-m", "blue", "-h", "green"] 600
+                           "-l", "red", "-m", "blue", "-h", "green"
+                          ] 50
+                        , Run ThermalZone 0 ["-t","<temp>°C"] 30
                         , Run StdinReader
                       ] 
         , sepChar = "%"
         , alignSep = "}{"
-        , template = "%StdinReader% | %cpu% | %memory% * %swap% | %wlan0% }{ Batt: %battery% | %date%"
+        , template = "%StdinReader% | %cpu% | %memory% | %swap% | %wlan0% }{ %thermal0% |%battery% | %date%"
         }
