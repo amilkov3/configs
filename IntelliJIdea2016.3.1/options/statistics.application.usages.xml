@@ -1,0 +1,198 @@
+<application>
+  <component name="StatisticsApplicationUsages">
+    <group name="run-configuration-type">
+      <project id="ups" values="JettyConfiguration.Local" collectionTime="1473775073602" />
+      <project id="test-drago" values="PhpBuiltInWebServerConfigurationType,PhpWebAppRunConfigurationType,PhpRemoteDebugRunConfigurationType" collectionTime="1473392538107" />
+    </group>
+    <group name="module type">
+      <project id="ups" values="JAVA_MODULE" collectionTime="1473775073602" />
+      <project id="Functional_Programming" values="JAVA_MODULE" collectionTime="1473730786867" />
+      <project id="test-drago" values="JAVA_MODULE" collectionTime="1473392538106" />
+      <project id="Purescript" values="JAVA_MODULE" collectionTime="1473775071456" />
+      <project id="dsx" values="JAVA_MODULE" collectionTime="1473791481477" />
+    </group>
+    <group name="vcs">
+      <project id="ups" values="Git" collectionTime="1473775073602" />
+      <project id="dsx" values="Git" collectionTime="1473791481476" />
+    </group>
+    <group name="VCS Log 2">
+      <project id="ups" values="data.commit.count.1K+,data.git.root.count.1" collectionTime="1473775073843" />
+      <project id="dsx" values="data.git.root.count.1,data.commit.count.1K+" collectionTime="1473791481717" />
+    </group>
+    <group name="libraries">
+      <project id="ups" values="Scala" collectionTime="1473775073820" />
+      <project id="Functional_Programming" values="Scala" collectionTime="1473730787008" />
+      <project id="dsx" values="Scala,CDI" collectionTime="1473791481703" />
+    </group>
+    <group name="Scala">
+      <project id="ups" values="Scala  2.9.2,Library  JUnit for Scala,Library  Scalaz,Library  ScalaTest,Library  Finagle,Library  Akka for Scala,Library  Lift Framework,Library  Casbah,Library  Spray" collectionTime="1473775073855" />
+      <project id="Functional_Programming" values="Scala  2.11.8" collectionTime="1473730787308" />
+      <project id="dsx" values="Library  JUnit for Scala,Library  Lift Framework,Library  Spray,Scala  2.9.2,Library  Scalaz,Library  Casbah,Library  Finagle,Library  ScalaTest,Library  Akka for Scala" collectionTime="1473791482030" />
+    </group>
+    <group name="run-configuration-type-temp">
+      <project id="ups" values="MavenRunConfiguration" collectionTime="1473775073602" />
+      <project id="Functional_Programming" values="Application" collectionTime="1473730786868" />
+      <project id="Parrallel_Programming" values="Application" collectionTime="1473187338570" />
+      <project id="dsx" values="MavenRunConfiguration" collectionTime="1473791481478" />
+    </group>
+    <group name="file-type">
+      <project id="ups" values="HTML,Git file,UNKNOWN,PLAIN_TEXT,JavaScript,Properties,XML,ARCHIVE,IDEA_MODULE,JAVA,Scala,Markdown,JSON Schema,Python,HOCON" collectionTime="1473775073764" />
+      <project id="Functional_Programming" values="PLAIN_TEXT,IDEA_MODULE,Scala" collectionTime="1473730786993" />
+      <project id="test-drago" values="PHP,JavaScript,HTML,Images,PLAIN_TEXT,YAML,JSON Schema,XML,Markdown,Smarty,SWF,SCSS,ARCHIVE,CSS,UNKNOWN" collectionTime="1473392538178" />
+      <project id="Purescript" values="JSON Schema,Git file,JavaScript,Markdown,Images,PLAIN_TEXT,Purescript" collectionTime="1473775071525" />
+      <project id="dsx" values="Markdown,Scala,HOCON,ARCHIVE,Git file,XML,Properties,JSON Schema,JAVA,JavaScript,UNKNOWN,IDEA_MODULE,Python,HTML,PLAIN_TEXT" collectionTime="1473791481653" />
+    </group>
+    <group name="php-debug-skipped-paths">
+      <project id="ups" values="0" collectionTime="1473775073848" />
+      <project id="Functional_Programming" values="0" collectionTime="1473730787277" />
+      <project id="test-drago" values="0" collectionTime="1473392538375" />
+      <project id="Purescript" values="0" collectionTime="1473775071826" />
+      <project id="dsx" values="0" collectionTime="1473791481986" />
+    </group>
+    <group name="php-interpreter-version">
+      <project id="ups" values="not installed" collectionTime="1473775073847" />
+      <project id="Functional_Programming" values="not installed" collectionTime="1473730787234" />
+      <project id="test-drago" values="5.5.36" collectionTime="1473392538372" />
+      <project id="Purescript" values="not installed" collectionTime="1473775071786" />
+      <project id="dsx" values="not installed" collectionTime="1473791481944" />
+    </group>
+    <group name="php-interpreter-debug-ext">
+      <project id="test-drago" values="xdebug" collectionTime="1473392538373" />
+    </group>
+    <group name="Command line tool">
+      <project id="test-drago" values="console in toolwindow,WP-CLI" collectionTime="1473392538378" />
+    </group>
+    <group name="WordPress Support">
+      <project id="test-drago" values="WordPress" collectionTime="1473392538379" />
+    </group>
+    <group name="php-interpreters">
+      <project id="ups" values="2" collectionTime="1473775073848" />
+      <project id="Functional_Programming" values="2" collectionTime="1473730787274" />
+      <project id="test-drago" values="2" collectionTime="1473392538372" />
+      <project id="Purescript" values="2" collectionTime="1473775071824" />
+      <project id="dsx" values="2" collectionTime="1473791481983" />
+    </group>
+    <group name="JavaScript versions">
+      <project id="ups" values="ECMAScript 5.1" collectionTime="1473775073845" />
+      <project id="dsx" values="ECMAScript 5.1" collectionTime="1473791481861" />
+      <project id="Functional_Programming" values="ECMAScript 5.1" collectionTime="1473730787227" />
+      <project id="test-drago" values="ECMAScript 5.1" collectionTime="1473392538353" />
+      <project id="Purescript" values="ECMAScript 5.1" collectionTime="1473775071778" />
+      <project id="Parrallel_Programming" values="ECMAScript 5.1" collectionTime="1473187338763" />
+    </group>
+    <group name="javaScript Scope Usages">
+      <project id="ups" values="Project,Project" collectionTime="1473775073845" />
+      <project id="dsx" values="Project,Project" collectionTime="1473791481861" />
+      <project id="Functional_Programming" values="Project,Project" collectionTime="1473730787227" />
+      <project id="test-drago" values="Project,Project" collectionTime="1473392538353" />
+      <project id="Purescript" values="Project,Project" collectionTime="1473775071778" />
+      <project id="Parrallel_Programming" values="Project,Project" collectionTime="1473187338763" />
+    </group>
+    <group name="Git">
+      <project id="ups" values="config.repo.sync.NOT_DECIDED,config.push.autoupdate.disabled,config.force.push.enabled,data.remote.branches.count.30+,config.save.policy.STASH,config.warn.about.crlf.enabled,config.push.update.all.roots.enabled,config.warn.about.detached.enabled,data.remotes.in.project.1,config.update.type.BRANCH_DEFAULT,config.ssh.enabled,config.cherry-pick.autocommit.disabled,data.local.branches.count.2+" collectionTime="1473775073845" />
+      <project id="dsx" values="config.save.policy.STASH,config.ssh.enabled,config.update.type.BRANCH_DEFAULT,config.repo.sync.NOT_DECIDED,config.warn.about.detached.enabled,config.force.push.enabled,config.push.autoupdate.disabled,data.local.branches.count.1,data.remotes.in.project.1,config.push.update.all.roots.enabled,config.warn.about.crlf.enabled,config.cherry-pick.autocommit.disabled,data.remote.branches.count.30+" collectionTime="1473791481721" />
+      <project id="Functional_Programming" values="config.push.update.all.roots.enabled,config.repo.sync.NOT_DECIDED,config.update.type.BRANCH_DEFAULT,config.force.push.enabled,config.warn.about.detached.enabled,config.cherry-pick.autocommit.disabled,config.ssh.enabled,config.save.policy.STASH,config.push.autoupdate.disabled,config.warn.about.crlf.enabled" collectionTime="1473730787015" />
+      <project id="test-drago" values="config.ssh.enabled,config.update.type.BRANCH_DEFAULT,config.cherry-pick.autocommit.disabled,config.warn.about.detached.enabled,config.force.push.enabled,config.push.autoupdate.disabled,config.repo.sync.NOT_DECIDED,config.save.policy.STASH,config.warn.about.crlf.enabled,config.push.update.all.roots.enabled" collectionTime="1473392538196" />
+      <project id="Purescript" values="config.cherry-pick.autocommit.disabled,config.push.autoupdate.disabled,config.warn.about.crlf.enabled,config.force.push.enabled,config.warn.about.detached.enabled,config.push.update.all.roots.enabled,config.save.policy.STASH,config.update.type.BRANCH_DEFAULT,config.ssh.enabled,config.repo.sync.NOT_DECIDED" collectionTime="1473775071538" />
+      <project id="Parrallel_Programming" values="config.ssh.enabled,config.push.update.all.roots.enabled,config.warn.about.detached.enabled,config.update.type.BRANCH_DEFAULT,config.force.push.enabled,config.push.autoupdate.disabled,config.save.policy.STASH,config.warn.about.crlf.enabled,config.repo.sync.NOT_DECIDED,config.cherry-pick.autocommit.disabled" collectionTime="1473187338616" />
+    </group>
+    <group name="images.ide.background">
+      <project id="ups" values="frame 0,editor 0" collectionTime="1473775073843" />
+      <project id="dsx" values="frame 0,editor 0" collectionTime="1473791481717" />
+      <project id="Functional_Programming" values="frame 0,editor 0" collectionTime="1473730787009" />
+      <project id="test-drago" values="frame 0,editor 0" collectionTime="1473392538185" />
+      <project id="Purescript" values="editor 0,frame 0" collectionTime="1473775071531" />
+      <project id="Parrallel_Programming" values="editor 0,frame 0" collectionTime="1473187338603" />
+    </group>
+    <group name="php-servers">
+      <project id="ups" values="0" collectionTime="1473775073847" />
+      <project id="Functional_Programming" values="0" collectionTime="1473730787234" />
+      <project id="test-drago" values="1" collectionTime="1473392538372" />
+      <project id="Purescript" values="0" collectionTime="1473775071786" />
+      <project id="dsx" values="0" collectionTime="1473791481944" />
+    </group>
+    <group name="frameworks">
+      <project id="ups" values="web" collectionTime="1473775073602" />
+      <project id="dsx" values="web" collectionTime="1473791481477" />
+    </group>
+    <group name="language-level">
+      <project id="ups" values="JDK_1_7" collectionTime="1473775073843" />
+      <project id="dsx" values="JDK_1_7" collectionTime="1473791481719" />
+      <project id="Functional_Programming" values="JDK_1_7" collectionTime="1473730787012" />
+      <project id="test-drago" values="JDK_1_3" collectionTime="1473392538187" />
+      <project id="Purescript" values="JDK_1_3" collectionTime="1473775071534" />
+      <project id="Parrallel_Programming" values="JDK_1_8" collectionTime="1473187338604" />
+    </group>
+    <group name="php-include-path">
+      <project id="ups" values="0" collectionTime="1473775073847" />
+      <project id="Functional_Programming" values="0" collectionTime="1473730787230" />
+      <project id="test-drago" values="0" collectionTime="1473392538371" />
+      <project id="Purescript" values="0" collectionTime="1473775071781" />
+      <project id="dsx" values="0" collectionTime="1473791481940" />
+    </group>
+    <group name="php-server-debug-ext">
+      <project id="test-drago" values="xdebug" collectionTime="1473392538373" />
+    </group>
+  </component>
+  <component name="UsageTrigger">
+    <counts>
+      <entry feature="CreateFile.CreateFileAction" count="42" />
+      <entry feature="OpenInBrowser.Chrome" count="5" />
+      <entry feature="StripeButton[REPL].hidden" count="1" />
+      <entry feature="execute.Application.Debug" count="184" />
+      <entry feature="execute.Application.Run" count="232" />
+      <entry feature="execute.JUnit.Run" count="10" />
+      <entry feature="execute.MavenRunConfiguration.Debug" count="322" />
+      <entry feature="execute.MavenRunConfiguration.Run" count="384" />
+      <entry feature="execute.PhpBuiltInWebServerConfigurationType.Run" count="2" />
+      <entry feature="execute.PhpRemoteDebugRunConfigurationType.Debug" count="5" />
+      <entry feature="execute.PhpWebAppRunConfigurationType.Debug" count="6" />
+      <entry feature="execute.Play2FrameworkRunConfigurations.Debug" count="2" />
+      <entry feature="execute.Play2FrameworkRunConfigurations.Run" count="4" />
+      <entry feature="execute.SbtRunConfiguration.Debug" count="15" />
+      <entry feature="execute.ScalaTestRunConfiguration.Coverage" count="1" />
+      <entry feature="execute.ScalaTestRunConfiguration.Debug" count="436" />
+      <entry feature="execute.ScalaTestRunConfiguration.Run" count="426" />
+      <entry feature="ide.help.ideaInterface.editor" count="10" />
+      <entry feature="ide.settings.Appearance" count="1" />
+      <entry feature="ide.settings.Clojure" count="3" />
+      <entry feature="ide.settings.Code_Style" count="4" />
+      <entry feature="ide.settings.Colors_&amp;_Fonts" count="14" />
+      <entry feature="ide.settings.Command_Line_Tool_Support" count="1" />
+      <entry feature="ide.settings.Console_Font" count="3" />
+      <entry feature="ide.settings.File_and_Code_Templates" count="2" />
+      <entry feature="ide.settings.Font" count="1" />
+      <entry feature="ide.settings.General" count="10" />
+      <entry feature="ide.settings.Haskell_Tools" count="17" />
+      <entry feature="ide.settings.Keymap" count="6" />
+      <entry feature="ide.settings.Markdown" count="1" />
+      <entry feature="ide.settings.Other_File_Types" count="4" />
+      <entry feature="ide.settings.PHP" count="2" />
+      <entry feature="ide.settings.Play2" count="1" />
+      <entry feature="ide.settings.Plugins" count="14" />
+      <entry feature="ide.settings.Preview" count="2" />
+      <entry feature="ide.settings.Scala" count="20" />
+      <entry feature="ide.settings.WordPress" count="1" />
+      <entry feature="idea.caches.invalidated" count="3" />
+      <entry feature="ideaapp.started" count="158" />
+      <entry feature="scala.change.signature" count="1" />
+      <entry feature="scala.file.script.parsed" count="2012293" />
+      <entry feature="scala.file.with.type.aware.annotated" count="79825" />
+      <entry feature="scala.inline" count="2" />
+      <entry feature="scala.introduce.variable" count="3" />
+      <entry feature="scala.macro.definition" count="2116" />
+      <entry feature="scala.move.class" count="18" />
+      <entry feature="scala.rename.local" count="3" />
+      <entry feature="scala.rename.member" count="22" />
+      <entry feature="scala.worksheet" count="1155" />
+      <entry feature="show.recent.tests.action" count="2" />
+      <entry feature="terminal.mac" count="188" />
+      <entry feature="welcome.screen.WelcomScreen.ManageLicense" count="1" />
+      <entry feature="welcome.screen.WelcomeScreen.Configure" count="5" />
+      <entry feature="welcome.screen.WelcomeScreen.Configure.Import" count="1" />
+      <entry feature="welcome.screen.WelcomeScreen.ImportProject" count="3" />
+      <entry feature="welcome.screen.WelcomeScreen.OpenProject" count="8" />
+      <entry feature="welcome.screen.WelcomeScreen.Settings" count="1" />
+    </counts>
+  </component>
+</application>

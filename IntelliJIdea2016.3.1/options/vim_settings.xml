@@ -1,0 +1,382 @@
+<application>
+  <component name="VimSettings">
+    <state version="4" enabled="true" />
+    <globalmarks>
+      <mark key="L" line="28" column="8" filename="$USER_HOME$/Google Drive/sun-ms-flux/test/com/weather/common/cache/CacheTest.scala" />
+    </globalmarks>
+    <filemarks>
+      <file name="$USER_HOME$/Google Drive/sun-ms-ups1/src/integration-test/src/test/scala/com/weather/dsx/integration_test/ups/UpsTest.scala" timestamp="1486428496059">
+        <mark key="[" line="36" column="27" />
+        <mark key="]" line="36" column="31" />
+        <mark key="." line="36" column="31" />
+        <mark key="^" line="36" column="31" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-flux/app/com/weather/common/data/Zip.scala" timestamp="1486093912084">
+        <mark key="[" line="16" column="40" />
+        <mark key="]" line="16" column="40" />
+        <mark key="^" line="16" column="39" />
+        <mark key="." line="16" column="40" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/user/Role.scala" timestamp="1486399796853">
+        <mark key="'" line="22" column="0" />
+        <mark key="[" line="10" column="2" />
+        <mark key="]" line="10" column="26" />
+        <mark key="." line="10" column="26" />
+        <mark key="^" line="10" column="26" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoUniqueFieldsStore.scala" timestamp="1486403500229">
+        <mark key="'" line="0" column="0" />
+      </file>
+      <file name="/a.dummy" timestamp="1486402664245">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-flux/test/com/weather/common/cache/CacheTest.scala" timestamp="1486445648970" />
+      <file name="$USER_HOME$/Google Drive/sun-ms-flux/app/com/weather/common/cache/Cache.scala" timestamp="1484243284800">
+        <mark key="[" line="16" column="0" />
+        <mark key="]" line="16" column="0" />
+        <mark key="." line="16" column="0" />
+      </file>
+      <file name="$USER_HOME$/test-proj/src/Lib.hs" timestamp="1486445241298">
+        <mark key="'" line="75" column="0" />
+        <mark key="[" line="28" column="16" />
+        <mark key="]" line="28" column="19" />
+        <mark key="^" line="28" column="19" />
+        <mark key="." line="28" column="19" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-flux/app/com/weather/common/execution/package.scala" timestamp="1484928525299">
+        <mark key="[" line="2" column="0" />
+        <mark key="]" line="2" column="0" />
+        <mark key="." line="2" column="0" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/worksheet.sc" timestamp="1486144625912">
+        <mark key="[" line="20" column="14" />
+        <mark key="]" line="20" column="20" />
+        <mark key="." line="20" column="20" />
+        <mark key="^" line="20" column="20" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/EncryptedMongoUniqueFieldsStore.scala" timestamp="1486402936967">
+        <mark key="[" line="21" column="150" />
+        <mark key="]" line="41" column="10" />
+        <mark key="^" line="41" column="10" />
+        <mark key="." line="41" column="10" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-flux/app/com/weather/flux/math/ScoreEvaluator.scala" timestamp="1486093075595">
+        <mark key="[" line="50" column="0" />
+        <mark key="]" line="50" column="0" />
+        <mark key="^" line="52" column="13" />
+        <mark key="." line="50" column="0" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-ups1/src/integration-test/src/test/resources/etc/dsx-integration-test.conf" timestamp="1486427604233">
+        <mark key="[" line="0" column="10" />
+        <mark key="]" line="0" column="23" />
+        <mark key="." line="0" column="23" />
+        <mark key="^" line="0" column="23" />
+      </file>
+      <file name="/Dummy.scala" timestamp="1486412362360">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-flux/app/com/weather/flux/cache/impl/RedisCacheClient.scala" timestamp="1486440567939">
+        <mark key="[" line="20" column="12" />
+        <mark key="]" line="20" column="11" />
+        <mark key="." line="20" column="11" />
+        <mark key="^" line="20" column="11" />
+      </file>
+      <file name="$USER_HOME$/test-proj/test-proj.cabal" timestamp="1486444313902">
+        <mark key="[" line="21" column="37" />
+        <mark key="]" line="22" column="27" />
+        <mark key="^" line="22" column="27" />
+        <mark key="." line="22" column="27" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-flux/app/com/weather/flux/monitor/Monitor.scala" timestamp="1485228635933">
+        <mark key="[" line="2" column="0" />
+        <mark key="]" line="2" column="0" />
+        <mark key="." line="2" column="0" />
+      </file>
+      <file name="$USER_HOME$/test-proj/app/Main.hs" timestamp="1486443986210">
+        <mark key="[" line="5" column="12" />
+        <mark key="]" line="5" column="19" />
+        <mark key="^" line="5" column="19" />
+        <mark key="." line="5" column="19" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-ups1/src/integration-test/src/test/scala/com/weather/dsx/integration_test/util/Connection.scala" timestamp="1486428146640">
+        <mark key="[" line="14" column="18" />
+        <mark key="]" line="14" column="25" />
+        <mark key="." line="14" column="25" />
+        <mark key="^" line="14" column="25" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoDbStore.scala" timestamp="1486400503442">
+        <mark key="'" line="166" column="0" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" timestamp="1486428903790">
+        <mark key="'" line="0" column="0" />
+        <mark key="[" line="30" column="79" />
+        <mark key="]" line="30" column="79" />
+        <mark key="." line="30" column="79" />
+        <mark key="^" line="30" column="79" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-flux/app/com/weather/flux/source/impl/DSXPastObsAvgSourceProvider.scala" timestamp="1484777634614">
+        <mark key="[" line="22" column="0" />
+        <mark key="]" line="22" column="0" />
+        <mark key="." line="22" column="0" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-flux/app/com/weather/flux/source/impl/ProdFluxDataSource.scala" timestamp="1485890291395">
+        <mark key="[" line="5" column="0" />
+        <mark key="]" line="5" column="0" />
+        <mark key="." line="5" column="0" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/ProfileHandlers.scala" timestamp="1486447150869">
+        <mark key="'" line="192" column="0" />
+      </file>
+      <file name="$USER_HOME$/Google Drive/sun-ms-ups1/src/integration-test/src/test/scala/com/weather/dsx/integration_test/ups/SuperuserTest.scala" timestamp="1486428773885">
+        <mark key="[" line="24" column="54" />
+        <mark key="]" line="24" column="57" />
+        <mark key="." line="24" column="57" />
+        <mark key="^" line="24" column="57" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="82" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups/src/main/scala/com/weather/ups/security/Authentication.scala" />
+      <jump line="75" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups/src/main/scala/com/weather/ups/security/Authentication.scala" />
+      <jump line="69" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups/src/main/scala/com/weather/ups/security/Authentication.scala" />
+      <jump line="62" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups/src/main/scala/com/weather/ups/security/Authentication.scala" />
+      <jump line="60" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups/src/main/scala/com/weather/ups/security/Authentication.scala" />
+      <jump line="56" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups/src/main/scala/com/weather/ups/security/Authentication.scala" />
+      <jump line="53" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups/src/main/scala/com/weather/ups/security/Authentication.scala" />
+      <jump line="51" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups/src/main/scala/com/weather/ups/security/Authentication.scala" />
+      <jump line="47" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups/src/main/scala/com/weather/ups/security/Authentication.scala" />
+      <jump line="45" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups/src/main/scala/com/weather/ups/security/Authentication.scala" />
+      <jump line="41" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups/src/main/scala/com/weather/ups/security/Authentication.scala" />
+      <jump line="36" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups/src/main/scala/com/weather/ups/security/Authentication.scala" />
+      <jump line="28" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups/src/main/scala/com/weather/ups/security/Authentication.scala" />
+      <jump line="10" column="25" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/user/Role.scala" />
+      <jump line="18" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/user/Role.scala" />
+      <jump line="190" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoDbStore.scala" />
+      <jump line="182" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoDbStore.scala" />
+      <jump line="177" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoDbStore.scala" />
+      <jump line="173" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoDbStore.scala" />
+      <jump line="166" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoDbStore.scala" />
+      <jump line="28" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="116" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="107" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="97" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="65" column="21" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoUniqueFieldsStore.scala" />
+      <jump line="63" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoUniqueFieldsStore.scala" />
+      <jump line="61" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoUniqueFieldsStore.scala" />
+      <jump line="58" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoUniqueFieldsStore.scala" />
+      <jump line="55" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoUniqueFieldsStore.scala" />
+      <jump line="52" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoUniqueFieldsStore.scala" />
+      <jump line="47" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoUniqueFieldsStore.scala" />
+      <jump line="36" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoUniqueFieldsStore.scala" />
+      <jump line="19" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoUniqueFieldsStore.scala" />
+      <jump line="10" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoUniqueFieldsStore.scala" />
+      <jump line="8" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoUniqueFieldsStore.scala" />
+      <jump line="1" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoUniqueFieldsStore.scala" />
+      <jump line="0" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/datastore/MongoUniqueFieldsStore.scala" />
+      <jump line="228" column="31" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/ProfileHandlers.scala" />
+      <jump line="226" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/ProfileHandlers.scala" />
+      <jump line="198" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/ProfileHandlers.scala" />
+      <jump line="192" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/ProfileHandlers.scala" />
+      <jump line="191" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="30" column="71" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="203" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="192" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="181" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="173" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="170" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="167" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="158" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="149" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="139" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="131" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="122" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="112" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="102" column="63" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="94" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="80" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="72" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="69" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="66" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="62" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="60" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="58" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="54" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="47" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="44" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="37" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="34" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="31" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="19" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="15" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="12" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="1" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="0" column="0" filename="$USER_HOME$/Google Drive/sun-ms-ups1/src/main/scala/com/weather/ups/handlers/SuperuserHandlers.scala" />
+      <jump line="16" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="18" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="20" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="22" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="25" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="32" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="37" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="41" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="33" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="30" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="28" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="26" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="24" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="8" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="6" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="0" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="36" column="16" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="40" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="45" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="53" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="56" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="61" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="66" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="73" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+      <jump line="75" column="0" filename="$USER_HOME$/test-proj/src/Lib.hs" />
+    </jumps>
+    <registers>
+      <register name="a" type="4">
+        <text />
+      </register>
+      <register name="&quot;" type="4">
+        <text>Get</text>
+      </register>
+      <register name="-" type="4">
+        <text>Get</text>
+      </register>
+      <register name="/" type="4">
+        <text>options()</text>
+      </register>
+      <register name="0" type="4">
+        <text>UpsHandlers.validateSession(req)</text>
+      </register>
+      <register name="1" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">aW5zdGFuY2UgVG9KU09OIFByaXZhdGVEYXRhCg==</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgIGluIHByaXZhdGVBcGlIYW5kbGVyCg==</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgIAo=</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">ZGZmZnIK</text>
+      </register>
+      <register name="7" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="8" type="2">
+        <text encoding="base64">ZGF0YSBTb3J0QnkgPSBBZ2UgfCBOYW1lCg==</text>
+      </register>
+      <register name="9" type="4">
+        <text>data SortBy = Age | Name
+data User = User {
+  name :: String,
+  age :: Int
+}</text>
+      </register>
+      <register name=":" type="4">
+        <text>x</text>
+      </register>
+    </registers>
+    <search>
+      <last-search>options()</last-search>
+      <last-offset />
+      <last-pattern>options()</last-pattern>
+      <last-replace>URI</last-replace>
+      <last-substitute>Path</last-substitute>
+      <last-dir>1</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history>
+      <history-search>
+        <entry>lazy val</entry>
+        <entry>override override</entry>
+        <entry>java.time.LocalDate</entry>
+        <entry encoding="base64">XDxwXD4=</entry>
+        <entry>Text</entry>
+        <entry>&quot;|&quot;</entry>
+        <entry>\&quot;|\&quot;</entry>
+        <entry>\&quot;\|\&quot;</entry>
+        <entry>Optional</entry>
+        <entry>PATH</entry>
+        <entry>OPTIONAL</entry>
+        <entry>REQUIRED</entry>
+        <entry>\|</entry>
+        <entry>|</entry>
+        <entry>###</entry>
+        <entry>Path</entry>
+        <entry encoding="base64">XDxuZXdcPg==</entry>
+        <entry>p</entry>
+        <entry>segmentation</entry>
+        <entry>options()</entry>
+      </history-search>
+      <history-cmd>
+        <entry encoding="base64">JXMvInwiLywg</entry>
+        <entry encoding="base64">JXMvXCJ8XCIvLCA=</entry>
+        <entry encoding="base64">JXMvXCJcfFwiLywg</entry>
+        <entry>%s/Optional/ Optional</entry>
+        <entry>%/PATH/URI</entry>
+        <entry>%s/PATH/URI</entry>
+        <entry>%s/OPTIONAL/ Optional</entry>
+        <entry>%s/REQUIRED/ Required</entry>
+        <entry>%s/\|/&quot;|&quot;</entry>
+        <entry>%s/|/&quot;|&quot;</entry>
+        <entry>%s/###/##</entry>
+        <entry>%s/Path/URI</entry>
+        <entry>1178</entry>
+        <entry>bnext</entry>
+        <entry>bprevious</entry>
+        <entry>hsplit</entry>
+        <entry>split</entry>
+        <entry>vsplit</entry>
+        <entry>x</entry>
+        <entry>GhcModType</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+    <shortcut-conflicts>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed V</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed O</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed B</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed I</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed G</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed J</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed H</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed Y</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed F</text>
+      </shortcut-conflict>
+    </shortcut-conflicts>
+    <editor>
+      <key-repeat enabled="true" />
+    </editor>
+  </component>
+</application>
