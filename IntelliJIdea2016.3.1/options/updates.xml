@@ -1,7 +1,0 @@
-<application>
-  <component name="UpdatesConfigurable">
-    <pluginHosts>
-      <item value="https://plugins.jetbrains.com/plugins/eap/8090" />
-    </pluginHosts>
-  </component>
-</application>
