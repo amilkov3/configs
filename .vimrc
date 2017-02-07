@@ -1,6 +1,7 @@
 execute pathogen#infect()
 set backspace=2
 syntax enable
+filetype on
 filetype plugin indent on 
 set expandtab
 set tabstop=2
@@ -45,9 +46,16 @@ nnoremap <silent> <C-c> :nohl<CR>
 
 "Ctrl-p
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 0
+nmap <script> <silent> <C-x> :CtrlPDir ../<CR>
+nmap <script> <silent> <C-z> :CtrlPDir ../../<CR>
 
 "Gitgutter
 let g:gitgutter_sign_column_always = 1
+
+"vim-hdevtools
+au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
+au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
 
 "Ghc-mod
 map <silent> ti :GhcModTypeInsert<CR>
@@ -95,6 +103,7 @@ let g:auto_save = 1
 
 " air-line
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}

@@ -3,11 +3,11 @@ Host ui
   User psg-user
 
 Host usa
-  HostName 54.227.8.153
+  HostName 54.145.224.11
   User psg-user
 
 Host usb
-  HostName 54.83.132.248
+  HostName 54.145.145.169
   User psg-user
 
 Host up
@@ -21,6 +21,14 @@ Host dsa
 Host dsb
   HostName 52.23.216.181 
   User psg-user
+
+Host dpe
+  HostName 54.175.48.220
+  User psg-user
+
+Host j
+  HostName jenkinsutil.dev.sun.weather.com
+  User dev-user
 
 Host github.com-voklima
   HostName github.com
