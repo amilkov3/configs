@@ -1,0 +1,4 @@
+YouCompleteMe        neco-ghc             vim-airline          vim-gitgutter        vimproc.vim
+ctrlp.vim            neocomplete.vim      vim-airline-themes   vim-hdevtools
+ghcmod-vim           neomake              vim-auto-save        vim-surround
+haskell-vim          nerdcommenter        vim-colors-solarized vim-togglelist

@@ -1,3 +1,9 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/amilkov/.oh-my-zsh
+
 source $HOME/.macshrc
 
 fpath=(/usr/local/share/zsh-completions $fpath)
@@ -19,15 +25,14 @@ alias tks='tmux kill-session -t'
 scalaargs='-Dscala.color'
 
 alias s11='$HOME/scala-2.11.8/bin/scala $scalaargs'
-alias s12='$HOME/scala-2.12.1/bin/scala $scalaargs'
+#alias s12='$HOME/scala-2.12.1/bin/scala $scalaargs'
+alias s12=amm
 
+alias si='stack install'
 alias ser='stack exec runhaskell'
 alias se='stack exec'
 alias hdevtools='stack exec --no-ghc-package-path hdevtools --'
 
-# export STACK_YAML=$HOME/.stack/global-project/stack.yaml
-
-bindkey -v
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -75,7 +80,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew sublime mvn jira)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -107,12 +112,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+#
 prompt_context(){
-  prompt_dir(){
-    prompt_segment blue black '%1/'
-  }
+   prompt_dir(){
+       prompt_segment blue black '%1/'
+   }
 }
 
+if [ "$TMUX" = "" ]; then tmux; fi
 
-if [ "$TMUX" = "" ]; then tmux; fi 

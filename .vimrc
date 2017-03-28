@@ -12,7 +12,7 @@ set history=100
 set hlsearch
 set showmatch
 
-set background=light
+set background=dark
 colorscheme solarized
 
 "i beam cursor in insert mode (Mac)
@@ -42,6 +42,7 @@ nmap <script> <silent> ] :wincmd l<CR>
 nmap , :bprevious<CR> 
 nmap . :bnext<CR> 
 
+"Clear highlight(s)
 nnoremap <silent> <C-c> :nohl<CR>
 
 "Ctrl-p
@@ -93,8 +94,6 @@ let g:necoghc_enable_detailed_browse = 1
 let g:ycm_auto_trigger = 1
 let g:ycm_min_num_of_chars_for_completion = 1
 let g:ycm_semantic_triggers = {'haskell' : ['.']}
-
-"let $PATH = $PATH . ':' . expand('~/.cabal/bin')
 
 set statusline+=%F
 set laststatus=2
