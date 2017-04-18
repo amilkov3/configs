@@ -33,6 +33,8 @@ alias ser='stack exec runhaskell'
 alias se='stack exec'
 alias hdevtools='stack exec --no-ghc-package-path hdevtools --'
 
+alias cx='chmod +x'
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
