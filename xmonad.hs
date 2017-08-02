@@ -19,10 +19,18 @@ main = do
                         }
         , modMask = mod1Mask     -- Rebind Mod to the Windows key
         , handleEventHook = handleEventHook defaultConfig <+> docksEventHook 
-        , startupHook = setWMName "LG3D"
+        , startupHook = start
         } `additionalKeys`
         [ ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock; xset dpms force off")
         , ((controlMask, xK_Print), spawn "sleep 0.2; scrot -s")
         , ((0, xK_Print), spawn "scrot")
+        , ((mod1Mask, xK_q), kill)
         ]
+
+start :: X ()
+start = do
+  setWMName "LG3D"
+  spawn "xset r rate 170 22" 
+
+
 
