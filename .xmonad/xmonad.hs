@@ -8,14 +8,15 @@ import System.IO
 
 main :: IO()
 main = do
-    xmproc <- spawnPipe "/usr/bin/xmobar /home/amilkov3/.xmobarrc"
+    xmproc <- spawnPipe "/usr/bin/xmobar ~/.xmobarrc"
     xmonad $ defaultConfig
         { manageHook = manageDocks <+> manageHook defaultConfig
         , layoutHook = avoidStruts  $  layoutHook defaultConfig
         , logHook = dynamicLogWithPP xmobarPP
                         { ppOutput = hPutStrLn xmproc
                         }
-        , modMask = mod4Mask     -- Rebind Mod to the Windows key
+          , modMask = mod4Mask     -- mod4Mask is Command key on Mac. mod1Mask is Alt key on PC
+          -- basically we want the key to the left of the space bar
         , handleEventHook = handleEventHook defaultConfig <+> docksEventHook 
         , startupHook = setWMName "LG3D"
         } `additionalKeys`
