@@ -4,34 +4,68 @@
 [credential]
 	helper = osxkeychain
 [alias]
-	pf = push --force-with-lease
-	ps = push
-  pl = pull
-	l = log
-  lo = log --oneline
-  rv = revert
-	t = tag
-	a = add
+  a = add
+
   b = branch
-	c = commit
-	cl = clone
-	d = diff
-	s = status
-	asi = rebase -i --autosquash
-  as = rebase --autosquash
-  rba = rebase --abort
-  rbc = rebase --continue
-  cf = commit --fixup
-  psu = push --set-upstream
-  pst = push --tags
-	st = stash
-  sto = stash push -m "oneStash"
+  bd = branch -D
+  bdp = push origin --delete
+
 	co = checkout
 	cob = checkout -b
+
   cp = cherry-pick
-	rs = reset
+
+	cl = clone
+
+	c = commit
+  cf = commit --fixup
+  ca = commit --amend
+  cw = commit -m "wip"
+
+  d = diff
+
+	f = fetch
+
+  l = log
+  lo = log --oneline
+
+  m = merge
+
+  pl = pull
+
+  ps = push
+  psu = push --set-upstream
+  psuo = push --set-upstream origin
+  pst = push --tags
+	pf = push --force-with-lease
+
 	rb = rebase
+	pasi = rebase -i --autosquash
+  as = rebase --autosquash
+  # Fixup squash on last commit so often
+  r1 = rebase -i HEAD~2
+  r2 = rebase -i HEAD~3
+  r3 = rebase -i HEAD~4
+  r4 = rebase -i HEAD~5
+  rba = rebase --abort
+  rbc = rebase --continue
+
   ra = remote add
   rr = remote rm
-	f = fetch
-	m = merge
+  rao = remote add origin
+  rv = remote -v
+
+	rs = reset
+
+  rv = revert
+
+  rmc = rm --cached
+  rmrc = rm -r --cached
+
+	s = status
+
+  st = stash
+  stp = stash pop
+  sto = stash push -m "oneStash"
+
+	t = tag
