@@ -1,5 +1,13 @@
 source ~/.vimrc
 
+:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
+
+
+
+
+""" Obsolete Haskell dev stuff
+
 "let g:neomake_open_list = 2
 "let g:neomake_auto_loc_list = 1
 "
@@ -9,7 +17,7 @@ let g:neomake_haskell_enabled_makers = ['hdevtools', 'hlint']
 
 "let g:neomake_autolint_enabled = 1
 
-autocmd! BufWritePost,BufEnter * Neomake
+autocmd! BufEnter,BufWritePost * Neomake
 
 let g:lopen = 2
 
@@ -23,4 +31,4 @@ let g:neomake_error_sign = {
       \ 'text': '💩',
       \ }
 
-:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+

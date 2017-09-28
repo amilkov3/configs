@@ -4,17 +4,13 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/amilkov/.oh-my-zsh
 
-source $HOME/.macshrc
-
 fpath=(/usr/local/share/zsh-completions $fpath)
+
+source $HOME/.macshrc
 
 export EDITOR='nvim'
 
-alias v='nvim'
-alias g='git'
-alias src='source'
-alias s='ssh'
-
+# tmux
 alias t='tmux'
 alias tk='tmux kill-server'
 alias tl='tmux ls'
@@ -22,18 +18,31 @@ alias ta='tmux a -t'
 alias tn='tmux new -s'
 alias tks='tmux kill-session -t'
 
+# scala
+# For syntax highlighting for just scala console
 scalaargs='-Dscala.color'
-
 alias s11='$HOME/scala-2.11.8/bin/scala $scalaargs'
-#alias s12='$HOME/scala-2.12.1/bin/scala $scalaargs'
+# ammonite
 alias s12=amm
 
+# haskell
 alias si='stack install'
 alias ser='stack exec runhaskell'
 alias se='stack exec'
 alias hdevtools='stack exec --no-ghc-package-path hdevtools --'
 
+# linux
 alias cx='chmod +x'
+alias c='curl'
+alias src='source'
+
+# programs
+alias v='nvim'
+alias g='git'
+alias s='ssh'
+alias h='http'
+alias i='tig'
+alias m='mongo'
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -115,6 +124,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+
+# Makes prompt only show current dir
 prompt_context(){
    prompt_dir(){
        prompt_segment blue black '%1/'
