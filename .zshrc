@@ -16,7 +16,8 @@ alias tk='tmux kill-server'
 alias tl='tmux ls'
 alias ta='tmux a -t'
 alias tn='tmux new -s'
-alias tks='tmux kill-session -t'
+alias tks='tmux kill-session'
+alias tkst='tmux kill-session -t'
 
 # scala
 # For syntax highlighting for just scala console
@@ -29,12 +30,17 @@ alias s12=amm
 alias si='stack install'
 alias ser='stack exec runhaskell'
 alias se='stack exec'
+alias seg='stack exec ghci'
+# for quick edits or viewing haskell files in neovim (may as well have syntax highlighting and
+# all the other goodies
 alias hdevtools='stack exec --no-ghc-package-path hdevtools --'
 
 # linux
 alias cx='chmod +x'
 alias c='curl'
 alias src='source'
+alias p='ping google.com'
+alias w='which'
 
 # programs
 alias v='nvim'
@@ -43,6 +49,8 @@ alias s='ssh'
 alias h='http'
 alias i='tig'
 alias m='mongo'
+alias e='emacs -nw'
+alias r='ranger'
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.

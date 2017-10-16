@@ -2,7 +2,6 @@
 ;; This file is loaded by Spacemacs at startup.
 ;; It must be stored in your home directory.
 
-
 (defun dotspacemacs/layers ()
   "Configuration Layers declaration.
 You should not put any user code in this function besides modifying the variable
@@ -32,37 +31,40 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     yaml
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      helm
-     clojure
-     haskell
      auto-completion
-     ;; better-defaults
+     better-defaults
      emacs-lisp
      git
      markdown
      ;; org
      (shell :variables
-             shell-default-height 30
+             shell-default-full-span nil
+             shell-default-height 60
+             shell-default-shell 'ansi-term
              shell-default-position 'bottom)
-     slack
      spell-checking
      syntax-checking
      (version-control :variables
                       version-control-global-margin t
                       version-control-diff-tool 'diff-hl
                       version-control-diff-side 'left)
+     haskell
+     auto-completion (haskell :variables haskell-completion-backend 'intero)
+     osx
+     yaml
+     shell-scripts
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages '(solarized-theme spaceline shell-pop evil-terminal-cursor-changer tabbar)
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
@@ -76,7 +78,6 @@ values."
    ;; Spacemacs and never uninstall them. (default is `used-only')
    dotspacemacs-install-packages 'used-only))
 
-
 (defun dotspacemacs/init ()
   "Initialization function.
 This function is called at the very startup of Spacemacs initialization
@@ -85,7 +86,6 @@ You should not put any user code in there besides modifying the variable
 values."
   ;; This setq-default sexp is an exhaustive list of all the supported
   ;; spacemacs settings.
-
   (setq-default
    ;; If non nil ELPA repositories are contacted via HTTPS whenever it's
    ;; possible. Set it to nil if you have no way to use HTTPS in your
@@ -136,7 +136,9 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(spacemacs-dark
+   dotspacemacs-themes '(
+                         solarized-dark
+                        spacemacs-dark
                          spacemacs-light)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
@@ -146,7 +148,7 @@ values."
                                :size 13
                                :weight normal
                                :width normal
-                               :powerline-scale 1.1)
+                               :powerline-scale 10)
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The key used for Emacs commands (M-x) (after pressing on the leader key).
@@ -301,8 +303,30 @@ values."
    ;; delete only whitespace for changed lines or `nil' to disable cleanup.
    ;; (default nil)
    dotspacemacs-whitespace-cleanup nil
-
    ))
+
+; My funcs
+
+; To enable writing a buffer to disk on exit from INSERT mode
+(defun auto-save ()
+  (if (and (buffer-file-name) (buffer-modified-p))
+      (progn (save-buffer))
+    (message "No file associated with this buffer")))
+
+
+; Because `o` opens an indented new line
+(defun haskell-evil-open-below ()
+  (interactive)
+  (evil-append-line nil)
+  (haskell-indentation-newline-and-indent))
+
+(defun haskell-evil-open-above ()
+  (interactive)
+  (evil-digit-argument-or-evil-beginning-of-line)
+  (haskell-indentation-newline-and-indent)
+  (evil-previous-line)
+  (haskell-indentation-indent-line)
+  (evil-append-line nil))
 
 
 (defun dotspacemacs/user-init ()
@@ -311,16 +335,9 @@ It is called immediately after `dotspacemacs/init', before layer configuration
 executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
-`dotspacemacs/user-config' first."
-  )
-
-(defun auto-save ()
-  (if (and (buffer-file-name) (buffer-modified-p))
-    (progn (save-buffer))
-    (message "No file associated with this buffer")))
+`dotspacemacs/user-config' first." )
 
 (defun dotspacemacs/user-config ()
-
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
 layers configuration.
@@ -328,40 +345,100 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
 
-  ;(global-set-key evil-motion-state-map "J" 'evil-beginning-of-line)
-  ;(with-eval-after-load 'evil-normal-state-map
-    ;(define-key ''normal )
+  ; Doesn't seem to get rid of 'helm-bookmark-map' error
+  ; Can do SPC f b to make it go away
+  ; Need it to go away to create directories and move and rename files
+  (require 'helm-bookmark)
+
+  ; fix powerline
+  (setq powerline-default-separator 'utf-8)
+  (spaceline-compile)
+
+  ; shift-l and shift-h in 
   (define-key evil-normal-state-map "H" 'evil-beginning-of-line)
   (define-key evil-normal-state-map "L" 'evil-end-of-line)
   (define-key evil-motion-state-map "H" 'evil-beginning-of-visual-line)
   (define-key evil-motion-state-map "L" 'evil-end-of-visual-line)
   (define-key evil-normal-state-map (kbd "C-f j") #'evil-window-left)
   (define-key evil-normal-state-map (kbd "C-f l") #'evil-window-right)
+
+  ; navigate panes
   (define-key evil-normal-state-map (kbd "C-f i") #'evil-window-up)
   (define-key evil-normal-state-map (kbd "C-f k") #'evil-window-down)
   (define-key evil-normal-state-map (kbd "C-f h") #'split-window-below-and-focus)
   (define-key evil-normal-state-map (kbd "C-f v") #'split-window-right-and-focus)
-  (define-key evil-motion-state-map (kbd "C-d") #'spacemacs/delete-window)
-  (define-key evil-insert-state-map (kbd "TAB") 'tab-to-tab-stop)
 
+  ; close pane
+  (define-key evil-motion-state-map (kbd "C-d") #'spacemacs/delete-window)
+
+  (unless (display-graphic-p)
+    (require 'evil-terminal-cursor-changer)
+    (evil-terminal-cursor-changer-activate) ; or (etcc-on)
+    )
+
+  ; random
+  (define-key evil-insert-state-map (kbd "TAB") 'tab-to-tab-stop)
+  (setq-default evil-escape-delay 0.04)
   (setq-default evil-insert-state-cursor 'bar)
   (global-hl-line-mode -1)
 
-  ;(global-linum-mode)
-  ;(define-key evil-normal-state-local-map "C-f-j" 'evil-window-left)
-  ;(define-key evil-normal-state-local-map "C-f-l" 'evil-window-right)
-  ;(define-key evil-normal-state-local-map "C-f-i" 'evil-window-up)
-  ;(define-key evil-normal-state-local-map "C-f-k" 'evil-window-down)
-  ;(define-key evil-normal-state-local-map "C-f-h" 'split-window-below)
-  ;(define-key evil-normal-state-local-map "C-f-v" 'split-window-right)
+  ; auto save
   (add-hook 'evil-insert-state-exit-hook 'auto-save)
 
-    ;)
-  ;(with-eval-after-load 'normal
-    ;(evil-define-key 'evil-normal-state-map (kbd "J") 'evil-beginning-of-line)
-    ;(global-set-key "J" 'evil-beginning-of-line)
-    ;(evil-define-key 'normal  (kbd "J") '(kbd "$"))
-    ;)
+  ; switch workspaces
+  ; NOTE: Commented out in favor of frames since they are more appropriate than "workspaces"
+  (define-key evil-normal-state-map (kbd "C-f 1") 'spacemacs/workspaces-transient-state/eyebrowse-switch-to-window-config-1)
+  (define-key evil-normal-state-map (kbd "C-f 2") 'spacemacs/workspaces-transient-state/eyebrowse-switch-to-window-config-2)
+  (define-key evil-normal-state-map (kbd "C-f 3") 'spacemacs/workspaces-transient-state/eyebrowse-switch-to-window-config-3)
+  (define-key evil-normal-state-map (kbd "C-f 4") 'spacemacs/workspaces-transient-state/eyebrowse-switch-to-window-config-4)
+  (define-key evil-normal-state-map (kbd "C-f w") 'spacemacs/workspaces-transient-state/eyebrowse-close-window-config)
+  ; Frames are fucking retard and so not what I thought they were...
+  ;(define-key evil-normal-state-map (kbd "C-f c") #'make-frame)
+  ;(define-key evil-normal-state-map (kbd "C-f n") 'ns-prev-frame)
+  ;(define-key evil-normal-state-map (kbd "C-f p") 'ns-next-frame)
+  ;(define-key evil-normal-state-map (kbd "C-f w") 'delete-frame)
+
+  ; A way to spawn new shells easily (Emacs is fucking dumb and just tries to use the same
+  ; shell instance everywhere
+  (define-key evil-normal-state-map (kbd "SPC p s") 'projectile-multi-term-in-root)
+
+  ; Fix vim indentation issues in haskell-mode
+  (with-eval-after-load "haskell-mode"
+    (evil-define-key 'normal haskell-mode-map
+      "o" 'haskell-evil-open-below
+      "O" 'haskell-evil-open-above))
+
+  (with-eval-after-load 'intero
+    (flycheck-add-next-checker 'intero '(warning . haskell-hlint)))
+
+
+  ; Think this is supposed to keep the tool tip up indefinitely but
+  ; the tool tip sucks anyway so the flycheck-display-errors-function below shows errors in minibuffer instead
+  ; (setq error-tip-notify-keep-messages t)
+  (setq flycheck-display-errors-function #'flycheck-display-error-messages-unless-error-list)
+
+  ; Somehow tabs became 8 spaces long all of a sudden...dunno how
+  (add-hook 'haskell-mode-hook
+            (lambda ()
+              (setq-default indent-tabs-mode nil)
+              (setq tab-width 2)
+              ))
+
+  ; Navigate buffers
+  (define-key evil-normal-state-map (kbd "[") 'switch-to-prev-buffer)
+  (define-key evil-normal-state-map (kbd "]") 'switch-to-next-buffer)
+
+  ; A tabbar. Still havent configured it to work right
+  (require 'tabbar)
+  (tabbar-mode)
+  (setq tabbar-buffer-groups-function
+        (lambda ()
+          (list "All Buffers")))
+  (set-face-attribute
+   'tabbar-separator nil
+   :background "gray20"
+   :height 0.6)
+  )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
@@ -372,32 +449,11 @@ you should place your code here."
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (smeargle orgit magit-gitflow helm-gitignore helm-company helm-c-yasnippet gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link fuzzy flycheck-pos-tip pos-tip flycheck-haskell evil-magit magit magit-popup git-commit with-editor company-statistics company-cabal clojure-snippets auto-yasnippet ac-ispell auto-complete intero flycheck hlint-refactor hindent helm-hoogle haskell-snippets company-ghci company-ghc ghc company haskell-mode cmm-mode clj-refactor inflections edn multiple-cursors paredit yasnippet peg cider-eval-sexp-fu cider seq queue clojure-mode ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint info+ indent-guide hydra hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make projectile pkg-info epl helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu highlight elisp-slime-nav dumb-jump f s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed dash aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async))))
+    (projectile avy async dash powerline tabbar evil-terminal-cursor-changer smartparens insert-shebang fish-mode company-shell helm-core evil helm org-plus-contrib gitignore-mode fringe-helper git-gutter+ git-gutter flyspell-correct pos-tip magit magit-popup git-commit with-editor mmm-mode markdown-toc markdown-mode flycheck gh-md ghc haskell-mode company yasnippet auto-complete define-word yaml-mode xterm-color ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package unfill toc-org spaceline smeargle shell-pop reveal-in-osx-finder restart-emacs rainbow-delimiters popwin persp-mode pcre2el pbcopy paradox osx-trash osx-dictionary orgit org-bullets open-junk-file neotree mwim multi-term move-text magit-gitflow macrostep lorem-ipsum linum-relative link-hint launchctl intero info+ indent-guide hungry-delete hlint-refactor hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-hoogle helm-gitignore helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag haskell-snippets google-translate golden-ratio gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ fuzzy flyspell-correct-helm flycheck-pos-tip flycheck-haskell flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu eshell-z eshell-prompt-extras esh-help elisp-slime-nav dumb-jump diff-hl company-statistics company-ghci company-ghc company-cabal column-enforce-mode cmm-mode clean-aindent-mode auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell)))
+ '(tabbar-separator (quote (0.5))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
-(defun dotspacemacs/emacs-custom-settings ()
-  "Emacs custom settings.
-This is an auto-generated function, do not modify its content directly, use
-Emacs customize menu instead.
-This function is called at the very end of Spacemacs initialization."
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (symon cider-spy yaml-mode smeargle orgit magit-gitflow helm-gitignore helm-company helm-c-yasnippet gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link fuzzy flycheck-pos-tip pos-tip flycheck-haskell evil-magit magit magit-popup git-commit with-editor company-statistics company-cabal clojure-snippets auto-yasnippet ac-ispell auto-complete intero flycheck hlint-refactor hindent helm-hoogle haskell-snippets company-ghci company-ghc ghc company haskell-mode cmm-mode clj-refactor inflections edn multiple-cursors paredit yasnippet peg cider-eval-sexp-fu cider seq queue clojure-mode ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint info+ indent-guide hydra hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make projectile pkg-info epl helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu highlight elisp-slime-nav dumb-jump f s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed dash aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async)))
- '(paradox-github-token t))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-)

@@ -23,6 +23,7 @@
   cw = commit -m "wip"
 
   d = diff
+  ds1 = diff --stat HEAD~1 HEAD
 
 	f = fetch
 
@@ -43,17 +44,17 @@
 	pasi = rebase -i --autosquash
   as = rebase --autosquash
   # Fixup squash on last commit so often
-  r1 = rebase -i HEAD~2
-  r2 = rebase -i HEAD~3
-  r3 = rebase -i HEAD~4
-  r4 = rebase -i HEAD~5
+  rb1 = rebase -i HEAD~2
+  rb2 = rebase -i HEAD~3
+  rb3 = rebase -i HEAD~4
+  rb4 = rebase -i HEAD~5
   rba = rebase --abort
   rbc = rebase --continue
 
   ra = remote add
   rr = remote rm
   rao = remote add origin
-  rv = remote -v
+  r = remote -v
 
 	rs = reset
 
