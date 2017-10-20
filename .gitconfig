@@ -70,3 +70,11 @@
   sto = stash push -m "oneStash"
 
 	t = tag
+
+  # lines in repo
+  lines = "!f() { git ls-files | xargs wc -l ; }; f"
+  # lines by contributor
+  lbc = "!f() { git ls-files | while read f; do git blame --line-porcelain $f | grep '^author '; done | sort -f | uniq -ic | sort -n ; }; f"
+  # lines by contributor summed
+  lines1 = "!f() { git ls-files | while read f; do git blame --line-porcelain $f | grep '^author '; done | sort -f | uniq -ic | sort -n | awk '{count+=$1} END{print count}'; }; f"
+
