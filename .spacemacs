@@ -37,7 +37,6 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      helm
-     auto-completion
      better-defaults
      emacs-lisp
      git
@@ -56,9 +55,17 @@ values."
                       version-control-diff-side 'left)
      haskell
      auto-completion (haskell :variables haskell-completion-backend 'intero)
+     ;(auto-completion 
+     ;                 :variables
+     ;                 auto-completion-tab-key-behavior 'complete)
      osx
      yaml
      shell-scripts
+     (scala :variables
+            ;scala-enable-eldoc t
+            scala-auto-insert-asterisk-in-comments t
+            scala-auto-start-ensime t
+            )
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -138,7 +145,7 @@ values."
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
                          solarized-dark
-                        spacemacs-dark
+                         spacemacs-dark
                          spacemacs-light)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
@@ -328,6 +335,13 @@ values."
   (haskell-indentation-indent-line)
   (evil-append-line nil))
 
+(defun enable-eldoc ()
+  (setq-local eldoc-documentation-function
+              (lambda ()
+                (when (ensime-connected-p)
+                  (ensime-type-at-point))))
+  (eldoc-mode +1))
+
 
 (defun dotspacemacs/user-init ()
   "Initialization function for user code.
@@ -335,7 +349,10 @@ It is called immediately after `dotspacemacs/init', before layer configuration
 executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
-`dotspacemacs/user-config' first." )
+`dotspacemacs/user-config' first."
+  (push '("melpa-stable" . "stable.melpa.org/packages/") configuration-layer--elpa-archives)
+  (push '("ensime" . "melpa-stable") package-pinned-packages)
+  )
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
@@ -349,6 +366,8 @@ you should place your code here."
   ; Can do SPC f b to make it go away
   ; Need it to go away to create directories and move and rename files
   (require 'helm-bookmark)
+
+  (setq ensime-eldoc-hints 'all)
 
   ; fix powerline
   (setq powerline-default-separator 'utf-8)
@@ -370,6 +389,9 @@ you should place your code here."
 
   ; close pane
   (define-key evil-motion-state-map (kbd "C-d") #'spacemacs/delete-window)
+
+  ; kill buffer
+  (define-key evil-normal-state-map (kbd "C-f d") #'kill-this-buffer)
 
   (unless (display-graphic-p)
     (require 'evil-terminal-cursor-changer)
@@ -408,6 +430,9 @@ you should place your code here."
       "o" 'haskell-evil-open-below
       "O" 'haskell-evil-open-above))
 
+  (with-eval-after-load "scala-mode"
+    (enable-eldoc))
+
   (with-eval-after-load 'intero
     (flycheck-add-next-checker 'intero '(warning . haskell-hlint)))
 
@@ -423,6 +448,12 @@ you should place your code here."
               (setq-default indent-tabs-mode nil)
               (setq tab-width 2)
               ))
+
+  ; doesn't look right with solarized-dark font
+  ;(add-hook 'scala-mode-hook
+  ;         (lambda ()
+  ;           (setq prettify-symbols-alist scala-prettify-symbols-alist)
+  ;           (prettify-symbols-mode)))
 
   ; Navigate buffers
   (define-key evil-normal-state-map (kbd "[") 'switch-to-prev-buffer)
@@ -449,7 +480,7 @@ you should place your code here."
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (projectile avy async dash powerline tabbar evil-terminal-cursor-changer smartparens insert-shebang fish-mode company-shell helm-core evil helm org-plus-contrib gitignore-mode fringe-helper git-gutter+ git-gutter flyspell-correct pos-tip magit magit-popup git-commit with-editor mmm-mode markdown-toc markdown-mode flycheck gh-md ghc haskell-mode company yasnippet auto-complete define-word yaml-mode xterm-color ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package unfill toc-org spaceline smeargle shell-pop reveal-in-osx-finder restart-emacs rainbow-delimiters popwin persp-mode pcre2el pbcopy paradox osx-trash osx-dictionary orgit org-bullets open-junk-file neotree mwim multi-term move-text magit-gitflow macrostep lorem-ipsum linum-relative link-hint launchctl intero info+ indent-guide hungry-delete hlint-refactor hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-hoogle helm-gitignore helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag haskell-snippets google-translate golden-ratio gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ fuzzy flyspell-correct-helm flycheck-pos-tip flycheck-haskell flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu eshell-z eshell-prompt-extras esh-help elisp-slime-nav dumb-jump diff-hl company-statistics company-ghci company-ghc company-cabal column-enforce-mode cmm-mode clean-aindent-mode auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell)))
+    (f s noflet ensime sbt-mode scala-mode projectile avy async dash powerline tabbar evil-terminal-cursor-changer smartparens insert-shebang fish-mode company-shell helm-core evil helm org-plus-contrib gitignore-mode fringe-helper git-gutter+ git-gutter flyspell-correct pos-tip magit magit-popup git-commit with-editor mmm-mode markdown-toc markdown-mode flycheck gh-md ghc haskell-mode company yasnippet auto-complete define-word yaml-mode xterm-color ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package unfill toc-org spaceline smeargle shell-pop reveal-in-osx-finder restart-emacs rainbow-delimiters popwin persp-mode pcre2el pbcopy paradox osx-trash osx-dictionary orgit org-bullets open-junk-file neotree mwim multi-term move-text magit-gitflow macrostep lorem-ipsum linum-relative link-hint launchctl intero info+ indent-guide hungry-delete hlint-refactor hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-hoogle helm-gitignore helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag haskell-snippets google-translate golden-ratio gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ fuzzy flyspell-correct-helm flycheck-pos-tip flycheck-haskell flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu eshell-z eshell-prompt-extras esh-help elisp-slime-nav dumb-jump diff-hl company-statistics company-ghci company-ghc company-cabal column-enforce-mode cmm-mode clean-aindent-mode auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell)))
  '(tabbar-separator (quote (0.5))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

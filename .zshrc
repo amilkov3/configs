@@ -31,6 +31,8 @@ alias si='stack install'
 alias ser='stack exec runhaskell'
 alias se='stack exec'
 alias seg='stack exec ghci'
+alias sb='stack build'
+alias st='stack test'
 # for quick edits or viewing haskell files in neovim (may as well have syntax highlighting and
 # all the other goodies
 alias hdevtools='stack exec --no-ghc-package-path hdevtools --'
@@ -51,6 +53,7 @@ alias i='tig'
 alias m='mongo'
 alias e='emacs -nw'
 alias r='ranger'
+
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -99,7 +102,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git, git-extras)
 
 source $ZSH/oh-my-zsh.sh
 

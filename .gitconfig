@@ -16,6 +16,7 @@
   cp = cherry-pick
 
 	cl = clone
+  clean = clean -d -fx ""
 
 	c = commit
   cf = commit --fixup
@@ -38,7 +39,7 @@
   psu = push --set-upstream
   psuo = push --set-upstream origin
   pst = push --tags
-	pf = push --force-with-lease
+  pf = push --force-with-lease
 
 	rb = rebase
 	pasi = rebase -i --autosquash
@@ -60,8 +61,8 @@
 
   rv = revert
 
-  rmc = rm --cached
-  rmrc = rm -r --cached
+  rmf = rm --cached
+  rmd = rm -r --cached
 
 	s = status
 
