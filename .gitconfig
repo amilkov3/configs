@@ -16,7 +16,7 @@
   cp = cherry-pick
 
 	cl = clone
-  clean = clean -d -fx ""
+  cle = clean
 
 	c = commit
   cf = commit --fixup
