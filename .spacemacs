@@ -56,7 +56,7 @@ values."
                       version-control-global-margin t
                       version-control-diff-tool 'diff-hl
                       version-control-diff-side 'left)
-     haskell
+     (haskell :variables haskell-enable-hindent-style "johan-tibell")
      auto-completion (haskell :variables haskell-completion-backend 'intero)
      ;(auto-completion
      ;                 :variables
@@ -483,12 +483,22 @@ you should place your code here."
   (define-key evil-normal-state-map (kbd "C-f p") 'projectile-switch-to-buffer)
   (define-key evil-normal-state-map (kbd "C-f o") 'projectile-find-file-other-window)
 
-
   ; visual mode highlight hello in (hello), press sm, parens are removed
   (define-key evil-visual-state-map "\m" 'evil-surround-delete)
+  ;(define-key evil-visual-state-map "\mb" 'evil-surround-delete "-}")
 
-  ;; wrap anything in visual mode in {-<thing>-} by pressing sb (for Haskell)
-  (push '(?b . ("{- " . " -}")) evil-surround-pairs-alist)
+  ; wrap anything in visual mode in {-<thing>-} by pressing sb (for Haskell)
+  (setq-default evil-surround-pairs-alist (push '(?b . ("{- " . " -}")) evil-surround-pairs-alist))
+
+  (defun haskell-indentation-advice ()
+    (when (and (< 1 (line-number-at-pos))
+               (save-excursion
+                 (forward-line -1)
+                 (string= "" (s-trim (buffer-substring (line-beginning-position) (line-end-position))))))
+      (delete-region (line-beginning-position) (point))))
+
+  (advice-add 'haskell-indentation-newline-and-indent
+              :after 'haskell-indentation-advice)
 
   )
 

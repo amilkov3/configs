@@ -14,9 +14,10 @@
 	cob = checkout -b
 
   cp = cherry-pick
+  cpc = cherry-pick --continue
 
 	cl = clone
-  cle = clean
+  cle = clean -fd
 
 	c = commit
   cf = commit --fixup

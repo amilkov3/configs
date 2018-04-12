@@ -59,6 +59,8 @@ vnoremap <S-h> ^
 nnoremap <S-l> $
 nnoremap <S-h> ^
 
+nnoremap ci c^
+
 " Moving in error buffer
 nmap <script> <silent> m :call ToggleLocationList()<CR>
 nmap <script> <silent> K :lpr<CR>

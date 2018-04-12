@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/amilkov/.oh-my-zsh
@@ -27,15 +28,19 @@ alias s11='$HOME/scala-2.11.8/bin/scala $scalaargs'
 alias s12=amm
 
 # haskell
-alias si='stack install'
-alias ser='stack exec runhaskell'
+alias sb='stack build'
+alias sc='stack clean'
 alias se='stack exec'
 alias seg='stack exec ghci'
-alias sb='stack build'
+alias ser='stack exec runhaskell'
+alias sh='stack help'
+alias si='stack install'
 alias st='stack test'
 # for quick edits or viewing haskell files in neovim (may as well have syntax highlighting and
 # all the other goodies
 alias hdevtools='stack exec --no-ghc-package-path hdevtools --'
+
+alias hp='rm *.cabal; stack exec -- hpack'
 
 # linux
 alias cx='chmod +x'
