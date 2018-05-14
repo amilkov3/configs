@@ -53,6 +53,9 @@ map <C-i> <C-W>k<C-W>
 map <C-k> <C-W>j<C-W>
 set wmh=0
 
+nnoremap <S-e> v$
+nnoremap <S-b> v^
+
 " Jump to end and beginning of line
 vnoremap <S-l> $
 vnoremap <S-h> ^

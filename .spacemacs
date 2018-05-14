@@ -462,8 +462,8 @@ you should place your code here."
   ;           (prettify-symbols-mode)))
 
   ; Navigate buffers
-  (define-key evil-normal-state-map (kbd "[") 'switch-to-prev-buffer)
-  (define-key evil-normal-state-map (kbd "]") 'switch-to-next-buffer)
+  (define-key evil-normal-state-map (kbd "[") 'tabbar-backward)
+  (define-key evil-normal-state-map (kbd "]") 'tabbar-forward)
 
   ; A tabbar. Still havent configured it to work right
   (require 'tabbar)
