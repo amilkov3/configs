@@ -397,7 +397,7 @@ you should place your code here."
   (define-key evil-normal-state-map (kbd "C-f d") #'kill-this-buffer)
 
   ; go to buffer
-  (define-key evil-normal-state-map (kbd "C-f f") #'helm-buffers-list)
+  (define-key evil-normal-state-map (kbd "C-f b") #'helm-buffers-list)
 
   (unless (display-graphic-p)
     (require 'evil-terminal-cursor-changer)
@@ -480,7 +480,7 @@ you should place your code here."
   (define-key dired-mode-map "c" 'helm-find-files)
 
   ; when focused in non project file, open a file in current projectile project
-  (define-key evil-normal-state-map (kbd "C-f p") 'projectile-switch-to-buffer)
+  (define-key evil-normal-state-map (kbd "C-f f") 'projectile-find-file)
   (define-key evil-normal-state-map (kbd "C-f o") 'projectile-find-file-other-window)
 
   ; visual mode highlight hello in (hello), press sm, parens are removed
@@ -497,8 +497,13 @@ you should place your code here."
                  (string= "" (s-trim (buffer-substring (line-beginning-position) (line-end-position))))))
       (delete-region (line-beginning-position) (point))))
 
+  ; fixes indentation haskell issues to a certain degree
   (advice-add 'haskell-indentation-newline-and-indent
               :after 'haskell-indentation-advice)
+
+  ; attempt to set default browser for search tools that open browser windows
+  ; setting default browser through OS works however
+  ;(setq-default browse-url-browser-function 'browse-url-chromium)
 
   )
 
@@ -511,7 +516,7 @@ you should place your code here."
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (web-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data vmd-mode iedit highlight epl goto-chg ghub let-alist bind-key hydra f s noflet ensime sbt-mode scala-mode projectile avy async dash powerline tabbar evil-terminal-cursor-changer smartparens insert-shebang fish-mode company-shell helm-core evil helm org-plus-contrib gitignore-mode fringe-helper git-gutter+ git-gutter flyspell-correct pos-tip magit magit-popup git-commit with-editor mmm-mode markdown-toc markdown-mode flycheck gh-md ghc haskell-mode company yasnippet auto-complete define-word yaml-mode xterm-color ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package unfill toc-org spaceline smeargle shell-pop reveal-in-osx-finder restart-emacs rainbow-delimiters popwin persp-mode pcre2el pbcopy paradox osx-trash osx-dictionary orgit org-bullets open-junk-file neotree mwim multi-term move-text magit-gitflow macrostep lorem-ipsum linum-relative link-hint launchctl intero info+ indent-guide hungry-delete hlint-refactor hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-hoogle helm-gitignore helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag haskell-snippets google-translate golden-ratio gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ fuzzy flyspell-correct-helm flycheck-pos-tip flycheck-haskell flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu eshell-z eshell-prompt-extras esh-help elisp-slime-nav dumb-jump diff-hl company-statistics company-ghci company-ghc company-cabal column-enforce-mode cmm-mode clean-aindent-mode auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell)))
+    (spinner parent-mode request pkg-info flx anzu undo-tree diminish bind-map packed popup web-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data vmd-mode iedit highlight epl goto-chg ghub let-alist bind-key hydra f s noflet ensime sbt-mode scala-mode projectile avy async dash powerline tabbar evil-terminal-cursor-changer smartparens insert-shebang fish-mode company-shell helm-core evil helm org-plus-contrib gitignore-mode fringe-helper git-gutter+ git-gutter flyspell-correct pos-tip magit magit-popup git-commit with-editor mmm-mode markdown-toc markdown-mode flycheck gh-md ghc haskell-mode company yasnippet auto-complete define-word yaml-mode xterm-color ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package unfill toc-org spaceline smeargle shell-pop reveal-in-osx-finder restart-emacs rainbow-delimiters popwin persp-mode pcre2el pbcopy paradox osx-trash osx-dictionary orgit org-bullets open-junk-file neotree mwim multi-term move-text magit-gitflow macrostep lorem-ipsum linum-relative link-hint launchctl intero info+ indent-guide hungry-delete hlint-refactor hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-hoogle helm-gitignore helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag haskell-snippets google-translate golden-ratio gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ fuzzy flyspell-correct-helm flycheck-pos-tip flycheck-haskell flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu eshell-z eshell-prompt-extras esh-help elisp-slime-nav dumb-jump diff-hl company-statistics company-ghci company-ghc company-cabal column-enforce-mode cmm-mode clean-aindent-mode auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell)))
  '(tabbar-separator (quote (0.5))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

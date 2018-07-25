@@ -89,8 +89,7 @@ nmap <script> <silent> <C-x> :CtrlPDir ../<CR>
 nmap <script> <silent> <C-z> :CtrlPDir ../../<CR>
 
 "Gitgutter
-let g:gitgutter_sign_column_always = 1
-
+set signcolumn=yes
 
 "YouCompleteMe
 let g:ycm_auto_trigger = 1

@@ -8,6 +8,7 @@
 
   b = branch
   bd = branch -D
+  bsu = branch -set-upstream-to=
   bdp = push origin --delete
 
 	co = checkout
@@ -17,6 +18,7 @@
   cpc = cherry-pick --continue
 
 	cl = clone
+  clr = clone --recursive
   cle = clean -fd
 
 	c = commit
@@ -56,6 +58,7 @@
   ra = remote add
   rr = remote rm
   rao = remote add origin
+  rau = remote add upstream
   r = remote -v
 
 	rs = reset
@@ -70,6 +73,7 @@
   st = stash
   stp = stash pop
   sto = stash push -m "oneStash"
+  sta = stash apply
 
 	t = tag
 
