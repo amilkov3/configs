@@ -1,8 +1,5 @@
 export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:$HOME/.etlas/bin:$PATH
 
-#export JAVA_HOME=`/usr/libexec/java_home -v 1.7.0_79`
-export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home'
-
 alias j8='export JAVA_HOME=`/usr/libexec/java_home -v 1.8`'
 alias j7='export JAVA_HOME=`/usr/libexec/java_home -v 1.7`'
 

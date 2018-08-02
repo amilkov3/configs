@@ -25,7 +25,7 @@ alias tkst='tmux kill-session -t'
 scalaargs='-Dscala.color'
 alias s11='$HOME/scala-2.11.8/bin/scala $scalaargs'
 # ammonite
-alias s12=amm
+alias s12='$HOME/scala-2.12.6/bin/scala'
 
 # haskell
 alias sb='stack build'
@@ -58,6 +58,10 @@ alias i='tig'
 alias m='mongo'
 alias e='emacs -nw'
 alias r='ranger'
+
+# docker
+alias dcl='docker container ls'
+alias dei='docker exec -it'
 
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -150,3 +154,6 @@ prompt_context(){
 
 if [ "$TMUX" = "" ]; then tmux; fi
 
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
