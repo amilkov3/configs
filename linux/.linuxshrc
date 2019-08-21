@@ -1,0 +1,56 @@
+
+alias sr="sudo reboot"
+
+# systemctl
+
+# list of enabled services
+alias scl="sudo systemctl list-unit-files"
+
+# set jdk
+alias j8='sudo archlinux-java set java-8-jdk'
+
+# pacman
+alias pi='sudo pacman -S --noconfirm'
+# update arch packages
+alias pyu='sudo pacman -Syu --noconfirm'
+# remove package
+alias pr='sudo pacman -R --noconfirm'
+# List packages not used by any other packages
+alias pdl='sudo pacman -Qdt'
+# Remove said packages
+alias pd='sudo pacman -R $(pacman -Qdtq)'
+# Dump installed packages to 'pkglist'
+alias plist='sudo pacman -Qqen > pkglist'
+# Install packages from 'pkglist'
+alias plisti='sudo pacman -S - < pkglist'
+# Check if package is installed
+alias pq='pacman -Qi'
+# Clean cache
+alias pc='sudo pacman -Sc'
+# install package already downloaded: `pacman -U /path/to/package.tar.gz`
+
+# yaourt
+alias yi="yaourt -Sa --noconfirm"
+# Update AUR packages
+alias yu="yaourt -Syua --noconfirm"
+# Remove AUR package
+alias yr="yaourt -R --noconfirm"
+# List installed AUR packages
+alias ylist='yaourt -Qme'
+# Search for specific package
+alias yq='ylist | grep'
+# Clean all packages from cache
+alias yc='yaourt -S -c -c'
+
+alias sx="startx"
+alias r="ranger"
+alias w="sudo wifi-menu"
+
+# Advanced volume config
+alias vol='pavucontrol'
+# Simple toggling of volume settings
+alias vol1="alsamixer"
+
+# suspend
+# without `sudo` doesnt seem to suspend permanently
+alias ss='sudo systemctl suspend'

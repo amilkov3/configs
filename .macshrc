@@ -1,11 +1,32 @@
-export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:$HOME/.etlas/bin:$PATH
+export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:$HOME/.etlas/bin:$HOME/Library/Python/2.7/bin:$HOME/.gem/ruby/2.3.0/bin:$PATH
 
+
+alias j11='export JAVA_HOME=`/usr/libexec/java_home -v 11`'
+alias j10='export JAVA_HOME=`/usr/libexec/java_home -v 10`'
 alias j8='export JAVA_HOME=`/usr/libexec/java_home -v 1.8`'
 alias j7='export JAVA_HOME=`/usr/libexec/java_home -v 1.7`'
 
 alias b='brew'
 alias bi='brew install'
 alias bt='brew tap'
-alias bl='brew linkapps'
+alias bl='brew link'
+alias bla='brew linkapps'
 alias bug='brew upgrade'
 alias bud='brew update'
+alias bc='brew cleanup'
+alias bf='brew info'
+alias bs='brew services'
+alias bsl='bs list'
+
+# Fairly certain these are the same
+alias bui='brew uninstall'
+alias br='brew remove'
+
+# Kubernetes completions
+# for some reason inlining this command here doesnt work
+alias ks='source <(kubectl completion zsh)'
+
+# if you're using rbenv
+# eval "$(rbenv init -)"
+
+source ~/Development/config_files/square/zshrc

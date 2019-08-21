@@ -1,0 +1,68 @@
+
+alias sr="sudo reboot"
+
+# systemctl
+
+alias ssc='sudo systemctl'
+# list of enabled services
+alias scl="sudo systemctl list-unit-files"
+# suspend
+# without `sudo` doesnt seem to suspend permanently
+alias ss='sudo systemctl suspend'
+
+alias j8='sudo archlinux-java set java-8-jdk'
+
+# pacman
+alias pi='sudo pacman -S --noconfirm'
+# update arch packages
+alias pyu='sudo pacman -Syu --noconfirm'
+# remove package
+alias pr='sudo pacman -R --noconfirm'
+# List packages not used by any other packages
+alias pdl='sudo pacman -Qdt'
+# Remove said packages
+alias pd='sudo pacman -R $(pacman -Qdtq)'
+# List installed packages
+alias pl='sudo pacman -Qqen'
+# Search for specific package
+alias pq='pl | grep'
+# Dump installed packages to 'pkglist'
+alias pld='sudo pacman -Qqen > pkglist'
+# Install packages from 'pkglist'
+alias pldi='sudo pacman -S - < pkglist'
+# List info about package (like dependencies)
+alias pq='pacman -Qi'
+# Clean cache
+alias pc='sudo pacman -Sc'
+
+# install package already downloaded: `pacman -U /path/to/package.tar.gz`
+
+# yaourt
+alias yi="yaourt -Sa --noconfirm"
+# Update AUR packages
+alias yu="yaourt -Syua --noconfirm"
+# Remove AUR package
+alias yr="yaourt -R --noconfirm"
+# List installed AUR packages
+alias yl='yaourt -Qme'
+# Search for specific package
+alias yq='yl | grep'
+# Clean all packages from cache
+alias yc='yaourt -S -c -c'
+
+alias sx="startx"
+alias r="ranger"
+alias w="sudo wifi-menu"
+
+# Advanced volume config
+alias vol='pavucontrol'
+# Simple toggling of volume settings
+alias vol1="alsamixer"
+
+# Golang
+#export PATH="$PATH:$HOME/go/bin"
+export PATH=$PATH:$(go env GOPATH)/bin
+export GOPATH=$(go env GOPATH)
+
+# Copying stuff
+alias xc='xclip -selection clipboard -i'

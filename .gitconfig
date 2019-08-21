@@ -1,6 +1,6 @@
-[user]
-	name = amilkov1
-	email = alex.milkov.contractor@weather.com\n
+[utosquashuser]
+	name = amilkov3
+	email = amilkov3@gmail.com
 [credential]
 	helper = osxkeychain
 [alias]
@@ -28,11 +28,16 @@
 
   d = diff
   ds1 = diff --stat HEAD~1 HEAD
+  dt = diff-tree --no-commit-id --name-only -r
 
 	f = fetch
 
+  i = init
+
   l = log
+  lr = log --reverse
   lo = log --oneline
+  lor = log --oneline --reverse
 
   m = merge
 
@@ -45,9 +50,10 @@
   pf = push --force-with-lease
 
 	rb = rebase
-	pasi = rebase -i --autosquash
-  as = rebase --autosquash
+	rbas = rebase -i --autosquash
+  # rbas = rebase --autosquash
   # Fixup squash on last commit so often
+  rbr = rebase -i --root
   rb1 = rebase -i HEAD~2
   rb2 = rebase -i HEAD~3
   rb3 = rebase -i HEAD~4
@@ -62,6 +68,7 @@
   r = remote -v
 
 	rs = reset
+  rsh = reset --hard
 
   rv = revert
 
@@ -71,9 +78,14 @@
 	s = status
 
   st = stash
+  sts = stash save
+  stl = stash list
+  std = stash drop
+  sts = stash show -p
   stp = stash pop
   sto = stash push -m "oneStash"
   sta = stash apply
+
 
 	t = tag
 
@@ -84,3 +96,7 @@
   # lines by contributor summed
   lines1 = "!f() { git ls-files | while read f; do git blame --line-porcelain $f | grep '^author '; done | sort -f | uniq -ic | sort -n | awk '{count+=$1} END{print count}'; }; f"
 
+[diff]
+	tool = meld
+[merge]
+	tool = meld

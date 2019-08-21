@@ -1,0 +1,24 @@
+
+"xleds screen - 10%"
+  XF86MonBrightnessDown
+
+"xleds screen + 10%"
+  XF86MonBrightnessUp
+
+"xleds screen - 1%"
+  Shift + XF86MonBrightnessDown
+
+"xleds screen + 1%"
+  Shift + XF86MonBrightnessUp
+
+"xleds key - 10"
+  XF86KbdBrightnessDown
+
+"xleds key + 10"
+  XF86KbdBrightnessUp
+
+"xleds key - 1"
+  Shift + XF86KbdBrightnessDown
+
+"xleds key + 1"
+  Shift + XF86KbdBrightnessUp

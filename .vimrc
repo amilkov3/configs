@@ -14,6 +14,27 @@ set showmatch
 set shortmess=a
 set cmdheight=2
 
+"if &term =~ '^xterm\\|rxvt'
+  " solid underscore
+  "let &t_SI .= "\<Esc>[4 q"
+  " solid block
+ " let &t_EI .= "\<Esc>[2 q"
+  " 1 or 0 -> blinking block
+  " 3 -> blinking underscore
+  " Recent versions of xterm (282 or above) also support
+  " 5 -> blinking vertical bar
+  " 6 -> solid vertical bar
+"endif
+
+"let &t_SI = "\<esc>[5 q"
+"let &t_SR = "\<esc>[5 q"
+"let &t_EI = "\<esc>[2 q"
+
+
+let &t_SI = "\<Esc>[6 q"
+let &t_SR = "\<Esc>[4 q"
+let &t_EI = "\<Esc>[2 q"
+
 " Files with no extension are assumed to be bash scripts
 au BufNewFile,BufRead * if &syntax == '' | set syntax=sh | endif
 
@@ -68,6 +89,10 @@ nnoremap ci c^
 nmap <script> <silent> m :call ToggleLocationList()<CR>
 nmap <script> <silent> K :lpr<CR>
 nmap <script> <silent> J :lne<CR>
+
+" Moving in quickfix buffer
+nmap <script> <silent> < :cn<CR>
+nmap <script> <silent> > :cp<CR>
 
 " Navigate vim panes
 nmap <script> <silent> q :wincmd j<CR>
