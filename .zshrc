@@ -49,6 +49,11 @@ alias hdevtools='stack exec --no-ghc-package-path hdevtools --'
 
 alias hp='rm *.cabal; stack exec -- hpack'
 
+# c
+ccf() {
+  cc -Wall -o $1 "$1.c"
+}
+
 # linux
 alias cx='chmod +x'
 alias c='curl'
