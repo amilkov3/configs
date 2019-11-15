@@ -46,8 +46,12 @@ alias st='stack test'
 # for quick edits or viewing haskell files in neovim (may as well have syntax highlighting and
 # all the other goodies
 alias hdevtools='stack exec --no-ghc-package-path hdevtools --'
-
 alias hp='rm *.cabal; stack exec -- hpack'
+
+# rust
+alias c='cargo'
+alias cb='c build'
+alias cbb='c +beta build'
 
 # c
 ccf() {
@@ -162,6 +166,7 @@ alias gi='go install'
 alias gc='go clean'
 alias gt='go test'
 alias gta='go test ./...'
+alias gbat='go test -run xxxxx ./...'
 alias gg='go get'
 alias ggu='go get -u'
 
